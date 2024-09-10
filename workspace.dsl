@@ -122,6 +122,8 @@ workspace "Domäne Web-Portale" {
 
         iw -> iw_alt "verlinkt auf"
 
+        iw -> azure_adb_2_c "AuthN / AuthZ durch"
+
         magnolia -> algolia "pusht suchbare Inhalte"
         magnolia -> celum "konsumiert Bilder und ruft Dokumente ab"
 
@@ -133,16 +135,11 @@ workspace "Domäne Web-Portale" {
         magnolia -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab"
 
         totara -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab"
-
         nutzerverwaltung -> crm_ik_pk "speichert Zielgruppen Zutaten"
-        azure_adb_2_c -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab?"
-
 
         // system -> system alt
         iw_alt -> liferay "zeigt Daten"
         iw_alt -> first_spirit "bezieht Inhalt aus"
-
-
     }
 
     views {
@@ -168,6 +165,31 @@ workspace "Domäne Web-Portale" {
 
         container mitarbeiterverwaltung "mv-container" {
             include element.parent==nutzerverwaltung element.parent==mitarbeiterverwaltung
+        }
+
+        dynamic * "zielgruppen-api-magnolia-content-ausspielung" "Zielgruppen basierte Contentausspielung" {
+            bankMitarbeiter -> iw "ruft auf"
+            iw -> azure_adb_2_c "redirect für Login"
+            azure_adb_2_c -> iw "erzeugt Logintoken"
+            iw -> magnolia "leitet weiter"
+            magnolia -> zielgruppenApi "ruft Zielgruppen mit Logintoken ab"
+            zielgruppenApi -> crm_ik_pk "ruft Zielgruppen für uukey ab"
+            crm_ik_pk -> zielgruppenApi "liefert Zielgruppen für uukey"
+            zielgruppenApi -> magnolia "liefert Zielgruppen für user"
+            magnolia -> bankMitarbeiter "Content Ausspielung auf Basis Zielgruppenzugehörigkeit"
+        }
+
+
+        dynamic * "zielgruppen-api-totara-ausspielung" "Zielgruppen basierte Contentausspielung" {
+            bankMitarbeiter -> iw "ruft auf"
+            iw -> azure_adb_2_c "redirect für Login"
+            azure_adb_2_c -> iw "erzeugt Logintoken"
+            iw -> totara "leitet weiter"
+            totara -> zielgruppenApi "ruft Zielgruppen mit Logintoken ab"
+            zielgruppenApi -> crm_ik_pk "ruft Zielgruppen für uukey ab"
+            crm_ik_pk -> zielgruppenApi "liefert Zielgruppen für uukey"
+            zielgruppenApi -> totara "liefert Zielgruppen für user"
+            totara -> bankMitarbeiter "E-Learnings Ausspielung auf Basis Zielgruppenzugehörigkeit"
         }
 
         styles {
