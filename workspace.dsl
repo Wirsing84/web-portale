@@ -4,7 +4,7 @@ workspace "Domäne Web-Portale" {
 
     model {
         // Nutzer
-        bankMitarbeiter = person "Bank Mitarbeiter"
+        bankMitarbeiter = person "Bankmitarbeiter"
         redaktion = person "Redaktion"
 
         iw = softwareSystem "InvestmentWelt Neu"
@@ -38,7 +38,7 @@ workspace "Domäne Web-Portale" {
         }
 
         group "SD Qualifizierung und Dialog" {
-            totara = softwareSystem "Totara" "E-Learning Platform"
+            totara = softwareSystem "Totara" "E-Learning Platform" "SDT Quali"
         }
 
         group "SD Basis IT" {
@@ -63,23 +63,26 @@ workspace "Domäne Web-Portale" {
         }
 
         group "SD User" {
+            zielgruppenApi = softwareSystem "Zielgruppen API" "" "SD User"
+
+            zielgruppenApi -> crm_ik_pk "liest"
+
             azure_adb_2_c = softwareSystem "Azure ADB2C" "" "SD User"
 
             mitarbeiterverwaltung = softwareSystem "Mitarbeiterverwaltung" "" "SD User" {
                 !docs mv/docs
 
-                mvBackend = container "MV Backend"
+                mv = container "MV"
 
                 uoaDB = container "UOA" "UOA Database" "TSY-Oracle" "Database" {
-                    mvBackend -> this "Reads from and writes to"
+                    mv -> this "Reads from and writes to"
                 }
 
                 uoaSyncSchema = container "Sync Schema" "Dedicated Schema for synching data to and from the NV Database" "TSY-Oracle" "Database" {
                     uoaDB -> this "Writes delta information to this schema using triggers "
                 }
 
-                mvSyncOutgoing = container "MV Sync Outgoing"
-                mvSyncIncoming = container "MV Sync Incoming"
+                mvSync = container "MV Sync Adapter"
 
             }
 
@@ -88,6 +91,7 @@ workspace "Domäne Web-Portale" {
 
                 nvFrontend = container "Frontend" "" "Vue SPA" "SD User"
                 nvBackend = container "Backend / API" "" "Vue SPA" "SD User" {
+                    nvDbos = component "NV DBOs" "" "Maven Module"
                     nvFrontend -> this "Consumes API"
                 }
                 nvDb = container "Database" "" "PostgreSQL" "Database, SD User" {
@@ -95,23 +99,23 @@ workspace "Domäne Web-Portale" {
                 }
             }
 
-            mvSyncOutgoing -> uoaSyncSchema "reads MV changes" "JPA"
-            mvSyncOutgoing -> nvDb "writes MV changes into NV DB" "JPA"
 
-            mvSyncIncoming -> nvDb "reads NV changes" "Event driven"
-            mvSyncIncoming -> uoaSyncSchema "writes NV changes into UOA"
+
+            mvSync -> uoaSyncSchema "reads MV changes" "JPA"
+            mvSync -> nvDb "writes MV changes into NV DB" "JPA"
+            mvSync -> nvDb "reads NV changes" "Event driven"
+            mvSync -> uoaSyncSchema "writes NV changes into UOA"
+            mvSync -> nvDbos "reuses code"
         }
 
         // person -> system
         bankMitarbeiter -> iw "nutzt"
         redaktion -> iw "nutzt"
         redaktion -> magnolia "verwaltet Inhalte"
+        bankMitarbeiter -> magnolia "konsumiert Inhalte"
+        bankMitarbeiter -> totara "nutzt Lernangebot"
 
         // system -> system neu
-
-
-        // iw -> shell_portalrahmen "basiert auf"
-
         iw -> magnolia "integriert"
         iw -> algolia "integriert"
         iw -> totara "integriert"
@@ -122,6 +126,16 @@ workspace "Domäne Web-Portale" {
         magnolia -> celum "konsumiert Bilder und ruft Dokumente ab"
 
         totara -> algolia "pusht suchbare Inhalte"
+
+        // Zielgruppen relevantes
+
+        magnolia -> zielgruppenApi "ruft alle vorhandenen ab"
+        magnolia -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab"
+
+        totara -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab"
+
+        nutzerverwaltung -> crm_ik_pk "speichert Zielgruppen Zutaten"
+        azure_adb_2_c -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab?"
 
 
         // system -> system alt
@@ -141,7 +155,11 @@ workspace "Domäne Web-Portale" {
         }
 
         systemContext nutzerverwaltung "nv-system-context" {
-            include ->nutzerverwaltung->
+            include ->nutzerverwaltung-> ->mitarbeiterverwaltung->
+        }
+
+        systemContext zielgruppenApi "zielgruppen-api-system-context" {
+            include ->zielgruppenApi-> nutzerverwaltung redaktion bankMitarbeiter
         }
 
         container nutzerverwaltung "nv-container" {
@@ -149,15 +167,36 @@ workspace "Domäne Web-Portale" {
         }
 
         container mitarbeiterverwaltung "mv-container" {
-            include *
+            include element.parent==nutzerverwaltung element.parent==mitarbeiterverwaltung
         }
 
         styles {
             element Person {
                 shape person
+                background #132c64
+                color #ffffff
             }
+
             element Database {
                 shape cylinder
+            }
+
+            element "Software System" {
+                shape RoundedBox
+                background #00358e
+                color #ffffff
+            }
+
+            element Container {
+                shape RoundedBox
+                background #466daf
+                color #ffffff
+            }
+
+            element Component {
+                shape RoundedBox
+                background #466daf
+                color #000000
             }
 
             element "SD User" {
@@ -183,7 +222,16 @@ workspace "Domäne Web-Portale" {
             element "SDT SDS" {
                 icon "./icons/SDT_SDS.png"
             }
+
+            element "SDT Quali" {
+                icon "./icons/SDT_Qualifizierung.png"
+            }
+        }
+
+        branding {
+            logo "./icons/ui.png"
         }
     }
+    
 
 }
