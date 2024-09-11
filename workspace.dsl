@@ -112,8 +112,9 @@ workspace "Domäne Web-Portale" {
         // person -> system
         bankMitarbeiter -> iw "nutzt"
         redaktion -> iw "nutzt"
-        redaktion -> magnolia "verwaltet Inhalte"
-        bankMitarbeiter -> magnolia "konsumiert Inhalte"
+        redaktion -> magnolia "verwaltet redaktionelle Inhalte"
+        redaktion -> totara "verwaltet Lerninhalte"
+        bankMitarbeiter -> magnolia "konsumiert redaktionelle Inhalte"
         bankMitarbeiter -> totara "nutzt Lernangebot"
 
         // system -> system neu
