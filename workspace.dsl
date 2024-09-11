@@ -6,6 +6,7 @@ workspace "Domäne Web-Portale" {
         // Nutzer
         bankMitarbeiter = person "Bankmitarbeiter"
         redaktion = person "Redaktion"
+        b2cNutzer = person "B2C Nutzer"
 
         iw = softwareSystem "InvestmentWelt Neu"
 
