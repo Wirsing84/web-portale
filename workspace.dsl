@@ -20,7 +20,7 @@ workspace "Domäne Web-Portale" {
             uni_tube = softwareSystem "UniTube" "CorporateTube Produkt von MovingImage" "SD Infomanagement"
             doc_me = softwareSystem "DocMe" ""
 
-            universal_messanger = softwareSystem "Universal Messanger" ""
+            universal_messenger = softwareSystem "Universal Messenger" ""
             webforms = softwareSystem "webforms" "Digitale Formulare"
 
             intergator = softwareSystem "Intergator" "Suchmaschine"
