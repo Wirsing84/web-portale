@@ -8,6 +8,9 @@ workspace "Domäne Web-Portale" {
         redaktion = person "Redaktion"
         b2cNutzer = person "B2C Nutzer"
 
+        zielgruppenAdmin = person "Zielgruppen Admin"
+        bankAdmin = person "Bank Admin"
+
         iw = softwareSystem "InvestmentWelt Neu"
 
         group "SD Infomanagement" {
@@ -53,7 +56,9 @@ workspace "Domäne Web-Portale" {
         }
 
         group "Andere" {
-            crm_ik_pk = softwareSystem "CRM IK/PK" ""
+            msdynamics = softwareSystem "MS Dynamics" "" {
+                crm_ik_pk = container "Customer Insights Journeys (CRM IK/PK)" ""
+            }
             uam = softwareSystem "UAM" ""
             depotplatform = softwareSystem "Depotplatform" ""
             dvo = softwareSystem "DVO" ""
@@ -61,19 +66,27 @@ workspace "Domäne Web-Portale" {
             legacy_apps = softwareSystem "Legacy Apps" ""
             depotupload = softwareSystem "Depotupload" ""
             ump = softwareSystem "UMP" ""
+            ladezone = softwareSystem "Ladezone" ""
         }
 
         group "SD User" {
-            zielgruppenApi = softwareSystem "Zielgruppen API" "" "SD User"
+            zielgruppenSystem = softwareSystem "Zielgruppen System" "" "SD User" {
+                !docs zielgruppen/docs
 
-            zielgruppenApi -> crm_ik_pk "liest"
+                zielgruppenApi = container "Zielgruppen API" "" "Azure APIM Package"
+            }
+
+            zielgruppenApi -> crm_ik_pk "liest" 
 
             azure_adb_2_c = softwareSystem "Azure ADB2C" "" "SD User"
+            entra_id = softwareSystem "Azure AD / Entra ID" "" "SD User"
 
             mitarbeiterverwaltung = softwareSystem "Mitarbeiterverwaltung" "" "SD User" {
                 !docs mv/docs
 
-                mv = container "MV"
+                mv = container "MV" {
+                    bankAdmin -> this "administriert Nutzer"
+                }
 
                 uoaDB = container "UOA" "UOA Database" "TSY-Oracle" "Database" {
                     mv -> this "Reads from and writes to"
@@ -99,8 +112,6 @@ workspace "Domäne Web-Portale" {
                     nvBackend -> this "Reads from and writes to"
                 }
             }
-
-
 
             mvSync -> uoaSyncSchema "reads MV changes" "JPA"
             mvSync -> nvDb "writes MV changes into NV DB" "JPA"
@@ -132,12 +143,17 @@ workspace "Domäne Web-Portale" {
         totara -> algolia "pusht suchbare Inhalte"
 
         // Zielgruppen relevantes
+        magnolia -> zielgruppenApi "ruft Zielgruppen ab"        
+        magnolia -> entra_id "auth"
+        totara -> zielgruppenApi "ruft Zielgruppen ab"
+        mitarbeiterverwaltung -> ladezone "speichert Zielgruppen Zutaten"
+        ladezone -> crm_ik_pk "speichert Zielgruppen Zutaten"
+        zielgruppenAdmin -> crm_ik_pk "definiert Zielgruppen"
 
-        magnolia -> zielgruppenApi "ruft alle vorhandenen ab"
-        magnolia -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab"
-
-        totara -> zielgruppenApi "ruft Zielgruppen für aktuellen User ab"
-        nutzerverwaltung -> crm_ik_pk "speichert Zielgruppen Zutaten"
+        // liferay basierte Zielgruppen
+        mitarbeiterverwaltung -> liferay "speichert Rechte für Rollengruppen Bildung" "" "legacy"
+        azure_adb_2_c -> liferay "ruft Zielgruppen für aktuellen User ab" "" "legacy"
+        magnolia -> liferay "ruft alle vorhandenen Zielgruppen ab" "" "legacy"
 
         // system -> system alt
         iw_alt -> liferay "zeigt Daten"
@@ -157,8 +173,28 @@ workspace "Domäne Web-Portale" {
             include ->nutzerverwaltung-> ->mitarbeiterverwaltung->
         }
 
-        systemContext zielgruppenApi "zielgruppen-api-system-context" {
-            include ->zielgruppenApi-> nutzerverwaltung redaktion bankMitarbeiter
+        systemLandscape "zielgruppen-api-system-landscape" {
+            title "Kontextabgrenzung Zielgruppen System"
+            include ->zielgruppenSystem-> mitarbeiterverwaltung redaktion bankMitarbeiter zielgruppenAdmin bankAdmin ladezone
+        }
+
+        systemContext zielgruppenSystem "zielgruppen-system-context" {
+            title "Zielgruppen System Kontext"
+            include *
+        }
+
+        systemContext magnolia "zielgruppen-system-context-konsumenten" {
+            title "Zielgruppen System Kontext (Konsumenten)"
+            include magnolia zielgruppenSystem totara redaktion bankMitarbeiter
+        }
+
+        systemContext msdynamics "zielgruppen-system-context-msdynamics" {
+            title "Zielgruppen System Kontext (MS Dynamics)"
+            include * mitarbeiterverwaltung
+        }
+
+        container zielgruppenSystem "zielgruppen-system-container" {
+            include *
         }
 
         container nutzerverwaltung "nv-container" {
@@ -169,16 +205,41 @@ workspace "Domäne Web-Portale" {
             include element.parent==nutzerverwaltung element.parent==mitarbeiterverwaltung
         }
 
+
+        dynamic * "zielgruppen-api-get-target-groups-for-user" "Zielgruppen basierte Contentausspielung" {
+            title "Zielgruppen basierte Contentausspielung"
+            magnolia -> zielgruppenSystem "ruft Zielgruppen mit Token des Nutzers ab"
+            zielgruppenSystem -> msdynamics "Login (technischer User)"
+            zielgruppenSystem -> msdynamics "ruft Zielgruppen für UUKEY ab "
+            msdynamics -> zielgruppenSystem "liefert Zielgruppen für UUKEY"
+            zielgruppenSystem -> magnolia "liefert Zielgruppen für User"
+        }
+
+
         dynamic * "zielgruppen-api-magnolia-content-ausspielung" "Zielgruppen basierte Contentausspielung" {
+            title "Zielgruppen basierte Contentausspielung"
             bankMitarbeiter -> iw "ruft auf"
             iw -> azure_adb_2_c "redirect für Login"
             azure_adb_2_c -> iw "erzeugt Logintoken"
             iw -> magnolia "leitet weiter"
-            magnolia -> zielgruppenApi "ruft Zielgruppen mit Logintoken ab"
-            zielgruppenApi -> crm_ik_pk "ruft Zielgruppen für uukey ab"
-            crm_ik_pk -> zielgruppenApi "liefert Zielgruppen für uukey"
-            zielgruppenApi -> magnolia "liefert Zielgruppen für user"
+            magnolia -> zielgruppenSystem "ruft Zielgruppen mit Logintoken ab"
+            zielgruppenSystem -> msdynamics "login technischer user"
+            zielgruppenSystem -> msdynamics "ruft Zielgruppen für uukey ab"
+            msdynamics -> zielgruppenSystem "liefert Zielgruppen für uukey"
+            zielgruppenSystem -> magnolia "liefert Zielgruppen für user"
             magnolia -> bankMitarbeiter "Content Ausspielung auf Basis Zielgruppenzugehörigkeit"
+        }
+
+        dynamic * "zielgruppen-api-magnolia-redaktion" "Magnolia Redaktion" {
+            redaktion -> magnolia "verwaltet Inhalt"
+            magnolia -> entra_id "redirect für Login"
+            entra_id -> magnolia "erzeugt Logintoken"
+            magnolia -> zielgruppenSystem "ruft alle verfügbaren Zielgruppen ab"
+            zielgruppenSystem -> msdynamics "login technischer user"
+            zielgruppenSystem -> msdynamics "ruft alle verfügbaren Zielgruppen ab"
+            msdynamics -> zielgruppenSystem "liefert alle Zielgruppen"
+            zielgruppenSystem -> magnolia "liefert alle Zielgruppen"
+            magnolia -> redaktion "ermöglicht Auswahl der Zielgruppen für Inhalt"
         }
 
 
@@ -187,10 +248,10 @@ workspace "Domäne Web-Portale" {
             iw -> azure_adb_2_c "redirect für Login"
             azure_adb_2_c -> iw "erzeugt Logintoken"
             iw -> totara "leitet weiter"
-            totara -> zielgruppenApi "ruft Zielgruppen mit Logintoken ab"
-            zielgruppenApi -> crm_ik_pk "ruft Zielgruppen für uukey ab"
-            crm_ik_pk -> zielgruppenApi "liefert Zielgruppen für uukey"
-            zielgruppenApi -> totara "liefert Zielgruppen für user"
+            totara -> zielgruppenSystem "ruft Zielgruppen mit Logintoken ab"
+            zielgruppenSystem -> msdynamics "ruft Zielgruppen für uukey ab"
+            msdynamics -> zielgruppenSystem "liefert Zielgruppen für uukey"
+            zielgruppenSystem -> totara "liefert Zielgruppen für user"
             totara -> bankMitarbeiter "E-Learnings Ausspielung auf Basis Zielgruppenzugehörigkeit"
         }
 
@@ -207,20 +268,14 @@ workspace "Domäne Web-Portale" {
 
             element "Software System" {
                 shape RoundedBox
-                background #00358e
-                color #ffffff
             }
 
             element Container {
                 shape RoundedBox
-                background #466daf
-                color #ffffff
             }
 
             element Component {
                 shape RoundedBox
-                background #466daf
-                color #000000
             }
 
             element "SD User" {
