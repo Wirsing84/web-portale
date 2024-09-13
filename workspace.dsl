@@ -17,11 +17,13 @@ workspace "Domäne Web-Portale" {
         vertriebsCockpit = softwareSystem "Vertriebs Cockpit" "" "Portal"
 
         // Webseiten
-        uip_de = softwareSystem "www.union-investment.de" "" "Web-Auftritt" "UIP"
-        uip_at = softwareSystem "www.union-investment.at" "" "Web-Auftritt" "UIP"
-        uir_intl = softwareSystem "realestate.union-investment.com" "" "Web-Auftritt" "UIR"
-        umh = softwareSystem "unternehmen.union-investment.de" "" "Web-Auftritt" "UMH"
-        attrax = softwareSystem "www.attrax.lu" "" "Web-Auftritt" "Attrax"
+        uip_de = softwareSystem "www.union-investment.de" "www.union-investment.de" "Web-Auftritt,UIP" {
+            url https://www.union-investment.de
+        }
+        uip_at = softwareSystem "www.union-investment.at" "" "Web-Auftritt,UIP"
+        uir_intl = softwareSystem "realestate.union-investment.com" "" "Web-Auftritt,UIR"
+        umh = softwareSystem "unternehmen.union-investment.de" "" "Web-Auftritt,UMH"
+        attrax = softwareSystem "www.attrax.lu" "" "Web-Auftritt,Attrax"
 
         // 
 
@@ -44,13 +46,17 @@ workspace "Domäne Web-Portale" {
             iw_alt = softwareSystem "InvestmentWelt Alt"
         }
 
-        group "Fonds & Produkte" {
+        group "SD Fonds & Produkte" {
             altervorsorge_rechner = softwareSystem "Altervorsorge Rechner" ""
             anlage_rechner = softwareSystem "AnlageRechner" ""
             synfonic = softwareSystem "SynFonIC" ""
             cegeka = softwareSystem "Cegeka" "Digitale Ergebnisberichte"
             fonds_datenkiosk = softwareSystem "Fonds Datenkiosk" ""
             poi_db = softwareSystem "POI-DB" ""
+            fondspreisliste = softwareSystem "Fondspreisliste"
+            fondportrait = softwareSystem "Fondportait"
+            fondspreisliste_alt = softwareSystem "Fondspreisliste Alt"
+            fondportrait_alt = softwareSystem "Fondportait Alt"
         }
 
         group "SD Qualifizierung und Dialog" {
@@ -170,12 +176,30 @@ workspace "Domäne Web-Portale" {
         // system -> system alt
         iw_alt -> liferay "zeigt Daten"
         iw_alt -> first_spirit "bezieht Inhalt aus"
+
+
+        // Privatkunden Auftritt
+        b2cNutzer -> uip_de "nutzt"
+        uip_de -> intergator "nutzt für die Suche"
+        uip_de -> fondportrait_alt "nutzt"
+        uip_de -> fondspreisliste_alt "nutzt"
+        fondspreisliste_alt -> intergator "basiert auf"
+        uip_de -> magnolia "zeigt Inhalte"
     }
 
     views {
         systemLandscape "Diagram1" {
             include *
             exclude element.tag==Andere
+        }
+
+
+        systemLandscape "Webauftritte" {
+            include ->element.tag==Web-Auftritt->
+        }
+
+        systemContext uip_de "privatkunden" {
+            include *
         }
 
         systemContext mitarbeiterverwaltung "mv-system-context" {
