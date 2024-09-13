@@ -11,7 +11,10 @@ workspace "Domäne Web-Portale" {
         zielgruppenAdmin = person "Zielgruppen Admin"
         bankAdmin = person "Bank Admin"
 
-        iw = softwareSystem "InvestmentWelt Neu"
+        iw = softwareSystem "InvestmentWelt Neu" "" "Portal"
+        ik_online = softwareSystem "IK Online" "" "Portal"
+        unioninvestmentde = softwareSystem "Union Investment.de" "" "Portal"
+        vertriebsCockpit = softwareSystem "Vertriebs Cockpit" "" "Portal"
 
         group "SD Infomanagement" {
             magnolia = softwareSystem "Magnolia" "Content Management System" "SD Infomanagement, SDT 342, SDT Code d'Azure"
@@ -56,17 +59,17 @@ workspace "Domäne Web-Portale" {
         }
 
         group "Andere" {
-            msdynamics = softwareSystem "MS Dynamics" "" {
-                crm_ik_pk = container "Customer Insights Journeys (CRM IK/PK)" ""
+            msdynamics = softwareSystem "MS Dynamics" "" "Andere" {
+                crm_ik_pk = container "Customer Insights Journeys (CRM IK/PK)" "" 
             }
-            uam = softwareSystem "UAM" ""
-            depotplatform = softwareSystem "Depotplatform" ""
-            dvo = softwareSystem "DVO" ""
-            atol = softwareSystem "ATOL" ""
-            legacy_apps = softwareSystem "Legacy Apps" ""
-            depotupload = softwareSystem "Depotupload" ""
-            ump = softwareSystem "UMP" ""
-            ladezone = softwareSystem "Ladezone" ""
+            uam = softwareSystem "UAM" "" "Andere"
+            depotplatform = softwareSystem "Depotplatform" "" "Andere"
+            dvo = softwareSystem "DVO" "" "Andere"
+            atol = softwareSystem "ATOL" "" "Andere"
+            legacy_apps = softwareSystem "Legacy Apps" "" "Andere"
+            depotupload = softwareSystem "Depotupload" "" "Andere"
+            ump = softwareSystem "UMP" "" "Andere"
+            ladezone = softwareSystem "Ladezone" "" "Andere"
         }
 
         group "SD User" {
@@ -162,7 +165,8 @@ workspace "Domäne Web-Portale" {
 
     views {
         systemLandscape "Diagram1" {
-            include ->iw->
+            include *
+            exclude element.tag==Andere
         }
 
         systemContext mitarbeiterverwaltung "mv-system-context" {
@@ -264,6 +268,10 @@ workspace "Domäne Web-Portale" {
 
             element Database {
                 shape cylinder
+            }
+
+            element Portal {
+                shape Webbrowser
             }
 
             element "Software System" {
