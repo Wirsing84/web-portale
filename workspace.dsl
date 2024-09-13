@@ -11,10 +11,19 @@ workspace "Domäne Web-Portale" {
         zielgruppenAdmin = person "Zielgruppen Admin"
         bankAdmin = person "Bank Admin"
 
+        // Portale
         iw = softwareSystem "InvestmentWelt Neu" "" "Portal"
         ik_online = softwareSystem "IK Online" "" "Portal"
-        unioninvestmentde = softwareSystem "Union Investment.de" "" "Portal"
         vertriebsCockpit = softwareSystem "Vertriebs Cockpit" "" "Portal"
+
+        // Webseiten
+        uip_de = softwareSystem "www.union-investment.de" "" "Web-Auftritt" "UIP"
+        uip_at = softwareSystem "www.union-investment.at" "" "Web-Auftritt" "UIP"
+        uir_intl = softwareSystem "realestate.union-investment.com" "" "Web-Auftritt" "UIR"
+        umh = softwareSystem "unternehmen.union-investment.de" "" "Web-Auftritt" "UMH"
+        attrax = softwareSystem "www.attrax.lu" "" "Web-Auftritt" "Attrax"
+
+        // 
 
         group "SD Infomanagement" {
             magnolia = softwareSystem "Magnolia" "Content Management System" "SD Infomanagement, SDT 342, SDT Code d'Azure"
