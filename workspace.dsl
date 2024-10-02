@@ -121,21 +121,26 @@ workspace "Domäne Web-Portale" {
             nutzerverwaltung = softwareSystem "Nutzerverwaltung" "" "SD User" {
                 !docs nv/docs
 
-                nvFrontend = container "Frontend" "" "Vue SPA" "SD User"
-                nvBackend = container "Backend / API" "" "Vue SPA" "SD User" {
-                    nvDbos = component "NV DBOs" "" "Maven Module"
-                    nvFrontend -> this "Consumes API"
+                nvFrontend = container "NV Frontend" "" "Vue SPA" "SD User"
+                nvBackend = container "NV Backend" "" "Vue SPA" "SD User" {
+                    nvBackendApi = component "NV Backend API" "" "Java Quarkus" {
+                        nvFrontend -> this "Consumes API"    
+                    }
+                    nvBackendSync = component "MV/NV Sync Application" "" "Java Quarkus"
+                    shared = component "Shared Code" "" "Java"
+                    nvBackendApi -> shared "uses"
+                    nvBackendSync -> shared "uses"
                 }
                 nvDb = container "Database" "" "PostgreSQL" "Database, SD User" {
-                    nvBackend -> this "Reads from and writes to"
+                    nvBackendApi -> this "Reads from and writes to"
                 }
             }
-
+            
+            nvBackendSync -> nvDb "writes MV changes into NV DB" "JPA"
+            nvBackendSync -> uoaSyncSchema "reads MV changes" "JPA"
+            
             mvSync -> uoaSyncSchema "reads MV changes" "JPA"
-            mvSync -> nvDb "writes MV changes into NV DB" "JPA"
-            mvSync -> nvDb "reads NV changes" "Event driven"
             mvSync -> uoaSyncSchema "writes NV changes into UOA"
-            mvSync -> nvDbos "reuses code"
         }
 
         // person -> system
@@ -160,23 +165,26 @@ workspace "Domäne Web-Portale" {
 
         totara -> algolia "pusht suchbare Inhalte"
 
-        // Zielgruppen relevantes
+        // CRM basierte Zielgruppen
         magnolia -> zielgruppenApi "ruft Zielgruppen ab"        
         magnolia -> entra_id "auth"
         totara -> zielgruppenApi "ruft Zielgruppen ab"
         mitarbeiterverwaltung -> ladezone "speichert Zielgruppen Zutaten"
         ladezone -> crm_ik_pk "speichert Zielgruppen Zutaten"
+        zielgruppenAdmin -> crm_ik_pk "manueller Datenabzug" "" "legacy"
         zielgruppenAdmin -> crm_ik_pk "definiert Zielgruppen"
+        azure_adb_2_c -> zielgruppenApi "ruft Zielgruppen ab"
 
-        // liferay basierte Zielgruppen
+        // Liferay basierte Zielgruppen
+        bankMitarbeiter -> azure_adb_2_c "login"
         mitarbeiterverwaltung -> liferay "speichert Rechte für Rollengruppen Bildung" "" "legacy"
         azure_adb_2_c -> liferay "ruft Zielgruppen für aktuellen User ab" "" "legacy"
-        magnolia -> liferay "ruft alle vorhandenen Zielgruppen ab" "" "legacy"
+        magnolia -> liferay "ruft Zielgruppen ab" "" "legacy"
+        zielgruppenAdmin -> liferay "definiert Zielgruppen" "" "legacy"
 
         // system -> system alt
         iw_alt -> liferay "zeigt Daten"
         iw_alt -> first_spirit "bezieht Inhalt aus"
-
 
         // Privatkunden Auftritt
         b2cNutzer -> uip_de "nutzt"
@@ -212,8 +220,13 @@ workspace "Domäne Web-Portale" {
 
         systemLandscape "zielgruppen-api-system-landscape" {
             title "Kontextabgrenzung Zielgruppen System"
-            include ->zielgruppenSystem-> mitarbeiterverwaltung redaktion bankMitarbeiter zielgruppenAdmin bankAdmin ladezone
+            include ->zielgruppenSystem-> mitarbeiterverwaltung redaktion bankMitarbeiter zielgruppenAdmin bankAdmin ladezone azure_adb_2_c
         }
+
+        systemLandscape "zielgruppen-api-system-landscape-aktuell" {
+            title "Kontextabgrenzung Zielgruppen System Aktuell"
+            include liferay magnolia mitarbeiterverwaltung azure_adb_2_c redaktion bankMitarbeiter zielgruppenAdmin bankAdmin msdynamics
+        } 
 
         systemContext zielgruppenSystem "zielgruppen-system-context" {
             title "Zielgruppen System Kontext"
@@ -222,12 +235,13 @@ workspace "Domäne Web-Portale" {
 
         systemContext magnolia "zielgruppen-system-context-konsumenten" {
             title "Zielgruppen System Kontext (Konsumenten)"
-            include magnolia zielgruppenSystem totara redaktion bankMitarbeiter
+            include magnolia zielgruppenSystem totara redaktion azure_adb_2_c bankMitarbeiter
         }
 
-        systemContext msdynamics "zielgruppen-system-context-msdynamics" {
+        container msdynamics "zielgruppen-system-context-msdynamics" {
             title "Zielgruppen System Kontext (MS Dynamics)"
             include * mitarbeiterverwaltung
+            exclude relationship.tag==legacy
         }
 
         container zielgruppenSystem "zielgruppen-system-container" {
@@ -242,8 +256,12 @@ workspace "Domäne Web-Portale" {
             include element.parent==nutzerverwaltung element.parent==mitarbeiterverwaltung
         }
 
+        component nvBackend "nvBackend-component" {
+            include *
+        }
 
-        dynamic * "zielgruppen-api-get-target-groups-for-user" "Zielgruppen basierte Contentausspielung" {
+
+        dynamic * "zielgruppen-api-get-target-groups-for-user" "Zielgruppen-basierte Contentausspielung" {
             title "Zielgruppen basierte Contentausspielung"
             magnolia -> zielgruppenSystem "ruft Zielgruppen mit Token des Nutzers ab"
             zielgruppenSystem -> msdynamics "Login (technischer User)"
@@ -253,17 +271,17 @@ workspace "Domäne Web-Portale" {
         }
 
 
-        dynamic * "zielgruppen-api-magnolia-content-ausspielung" "Zielgruppen basierte Contentausspielung" {
+        dynamic * "zielgruppen-api-magnolia-content-ausspielung" "Zielgruppen-basierte Contentausspielung" {
             title "Zielgruppen basierte Contentausspielung"
             bankMitarbeiter -> iw "ruft auf"
-            iw -> azure_adb_2_c "redirect für Login"
-            azure_adb_2_c -> iw "erzeugt Logintoken"
-            iw -> magnolia "leitet weiter"
-            magnolia -> zielgruppenSystem "ruft Zielgruppen mit Logintoken ab"
+            iw -> azure_adb_2_c "Redirect für Login"
+            azure_adb_2_c -> zielgruppenSystem "Abruf der Zielgruppen"
             zielgruppenSystem -> msdynamics "login technischer user"
             zielgruppenSystem -> msdynamics "ruft Zielgruppen für uukey ab"
             msdynamics -> zielgruppenSystem "liefert Zielgruppen für uukey"
-            zielgruppenSystem -> magnolia "liefert Zielgruppen für user"
+            zielgruppenSystem -> azure_adb_2_c "liefert Zielgruppen für uukey"
+            azure_adb_2_c -> iw "erzeugt Logintoken inkl. Zielgruppen"
+            iw -> magnolia "leitet weiter"
             magnolia -> bankMitarbeiter "Content Ausspielung auf Basis Zielgruppenzugehörigkeit"
         }
 

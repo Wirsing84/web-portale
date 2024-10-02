@@ -11,8 +11,7 @@
     } ]
   },
   "id" : 1,
-  "lastModifiedAgent" : "structurizr-javascript",
-  "lastModifiedDate" : "2024-09-13T11:54:10Z",
+  "lastModifiedDate" : "2024-10-02T13:33:36Z",
   "model" : {
     "people" : [ {
       "id" : "1",
@@ -24,27 +23,36 @@
       "relationships" : [ {
         "description" : "nutzt",
         "destinationId" : "6",
-        "id" : "87",
+        "id" : "91",
         "properties" : {
-          "structurizr.dsl.identifier" : "43b66be0-f5a4-467c-922f-af6ac869e7be"
+          "structurizr.dsl.identifier" : "0b5f493e-786f-474c-8984-f99beaba584c"
         },
         "sourceId" : "1",
         "tags" : "Relationship"
       }, {
         "description" : "konsumiert redaktionelle Inhalte",
         "destinationId" : "14",
-        "id" : "91",
+        "id" : "95",
         "properties" : {
-          "structurizr.dsl.identifier" : "57ee27e6-54fe-4c98-beec-64fa79f0361a"
+          "structurizr.dsl.identifier" : "0437afa3-82f1-459b-ba9f-c311b46045ac"
         },
         "sourceId" : "1",
         "tags" : "Relationship"
       }, {
         "description" : "nutzt Lernangebot",
         "destinationId" : "36",
-        "id" : "92",
+        "id" : "96",
         "properties" : {
-          "structurizr.dsl.identifier" : "0bc489dd-8d2f-4eb8-86df-3875534f7eac"
+          "structurizr.dsl.identifier" : "ec0c4e08-0466-4658-aef4-3d7a45244d08"
+        },
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "login",
+        "destinationId" : "58",
+        "id" : "118",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bfd4c9bf-fea5-403d-afb7-3183bb58306f"
         },
         "sourceId" : "1",
         "tags" : "Relationship"
@@ -60,27 +68,27 @@
       "relationships" : [ {
         "description" : "nutzt",
         "destinationId" : "6",
-        "id" : "88",
+        "id" : "92",
         "properties" : {
-          "structurizr.dsl.identifier" : "402a67e3-c925-4787-b333-acbbe6f6d4c2"
+          "structurizr.dsl.identifier" : "77a6a7c1-0fe2-4430-8245-aa34cf54dd41"
         },
         "sourceId" : "2",
         "tags" : "Relationship"
       }, {
         "description" : "verwaltet redaktionelle Inhalte",
         "destinationId" : "14",
-        "id" : "89",
+        "id" : "93",
         "properties" : {
-          "structurizr.dsl.identifier" : "1ec1867d-d981-4315-9fb6-2f3ae4681a54"
+          "structurizr.dsl.identifier" : "f1decffc-f514-41ef-a88c-08263b6992d5"
         },
         "sourceId" : "2",
         "tags" : "Relationship"
       }, {
         "description" : "verwaltet Lerninhalte",
         "destinationId" : "36",
-        "id" : "90",
+        "id" : "94",
         "properties" : {
-          "structurizr.dsl.identifier" : "96605eef-ae95-4934-814e-8c270b3ee0f5"
+          "structurizr.dsl.identifier" : "0c6f6dfc-7485-49a5-8ca4-f0a2424d0fed"
         },
         "sourceId" : "2",
         "tags" : "Relationship"
@@ -96,9 +104,9 @@
       "relationships" : [ {
         "description" : "nutzt",
         "destinationId" : "9",
-        "id" : "116",
+        "id" : "125",
         "properties" : {
-          "structurizr.dsl.identifier" : "f41eb5d4-b7eb-4a65-88b1-605a7818d561"
+          "structurizr.dsl.identifier" : "ce96cb3a-532e-4e6b-ab84-4a4e2d357f8e"
         },
         "sourceId" : "3",
         "tags" : "Relationship"
@@ -112,20 +120,38 @@
         "structurizr.dsl.identifier" : "zielgruppenadmin"
       },
       "relationships" : [ {
+        "description" : "manueller Datenabzug",
+        "destinationId" : "43",
+        "id" : "113",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1bdf1b97-4ce0-4733-9107-7b4cf01d64c7"
+        },
+        "sourceId" : "4",
+        "tags" : "Relationship,legacy"
+      }, {
+        "description" : "manueller Datenabzug",
+        "destinationId" : "42",
+        "id" : "114",
+        "linkedRelationshipId" : "113",
+        "sourceId" : "4"
+      }, {
         "description" : "definiert Zielgruppen",
         "destinationId" : "43",
-        "id" : "109",
+        "id" : "115",
         "properties" : {
-          "structurizr.dsl.identifier" : "76f6a130-2fe5-455e-9ce1-e7d5e1031e4a"
+          "structurizr.dsl.identifier" : "0ad84879-34c7-4bcb-aee1-d35d984d3a97"
         },
         "sourceId" : "4",
         "tags" : "Relationship"
       }, {
         "description" : "definiert Zielgruppen",
-        "destinationId" : "42",
-        "id" : "110",
-        "linkedRelationshipId" : "109",
-        "sourceId" : "4"
+        "destinationId" : "16",
+        "id" : "122",
+        "properties" : {
+          "structurizr.dsl.identifier" : "8c845cde-ebed-42a3-a6e5-f85af58ef841"
+        },
+        "sourceId" : "4",
+        "tags" : "Relationship,legacy"
       } ],
       "tags" : "Element,Person"
     }, {
@@ -140,7 +166,7 @@
         "destinationId" : "61",
         "id" : "62",
         "properties" : {
-          "structurizr.dsl.identifier" : "2c69ac42-1167-4a94-97b1-2f9a92c1f724"
+          "structurizr.dsl.identifier" : "3865dd01-d04e-40e0-9aa0-28d4cc80045b"
         },
         "sourceId" : "5",
         "tags" : "Relationship"
@@ -164,45 +190,45 @@
       "relationships" : [ {
         "description" : "integriert",
         "destinationId" : "14",
-        "id" : "93",
+        "id" : "97",
         "properties" : {
-          "structurizr.dsl.identifier" : "142805b5-0bdb-4ffc-9d2c-bf27ed986481"
+          "structurizr.dsl.identifier" : "bd145067-e005-49d7-bc00-bc32751b4bd3"
         },
         "sourceId" : "6",
         "tags" : "Relationship"
       }, {
         "description" : "integriert",
         "destinationId" : "41",
-        "id" : "94",
+        "id" : "98",
         "properties" : {
-          "structurizr.dsl.identifier" : "1296682a-5a27-4254-aba1-89b63fd28418"
+          "structurizr.dsl.identifier" : "218e19c9-fc26-4cb9-98dd-b0aa6e7c9e08"
         },
         "sourceId" : "6",
         "tags" : "Relationship"
       }, {
         "description" : "integriert",
         "destinationId" : "36",
-        "id" : "95",
+        "id" : "99",
         "properties" : {
-          "structurizr.dsl.identifier" : "14b4685e-778e-469d-b79c-05bd252f6775"
+          "structurizr.dsl.identifier" : "fd278881-697c-44e0-968f-00802bc798e9"
         },
         "sourceId" : "6",
         "tags" : "Relationship"
       }, {
         "description" : "verlinkt auf",
         "destinationId" : "25",
-        "id" : "96",
+        "id" : "100",
         "properties" : {
-          "structurizr.dsl.identifier" : "6d8f94f2-cb43-48ab-93ee-dac4643fd9bd"
+          "structurizr.dsl.identifier" : "91fa9f7c-baff-4436-a87e-4711a34bb3ce"
         },
         "sourceId" : "6",
         "tags" : "Relationship"
       }, {
         "description" : "AuthN / AuthZ durch",
         "destinationId" : "58",
-        "id" : "97",
+        "id" : "101",
         "properties" : {
-          "structurizr.dsl.identifier" : "1ff3f70e-712e-46f4-8efd-397147fa8b91"
+          "structurizr.dsl.identifier" : "a7a7a502-5026-415a-81b8-a4eed5d695f1"
         },
         "sourceId" : "6",
         "tags" : "Relationship"
@@ -238,36 +264,36 @@
       "relationships" : [ {
         "description" : "nutzt für die Suche",
         "destinationId" : "23",
-        "id" : "117",
+        "id" : "126",
         "properties" : {
-          "structurizr.dsl.identifier" : "15b16374-c954-424d-b306-dd30c9b17b59"
+          "structurizr.dsl.identifier" : "75860c16-68f4-48d1-857e-417fd1017b15"
         },
         "sourceId" : "9",
         "tags" : "Relationship"
       }, {
         "description" : "nutzt",
         "destinationId" : "35",
-        "id" : "118",
+        "id" : "127",
         "properties" : {
-          "structurizr.dsl.identifier" : "44b8edf7-63b1-4007-83c2-86f4a22a7825"
+          "structurizr.dsl.identifier" : "3f344107-69a9-4f06-b85a-a001e57541f5"
         },
         "sourceId" : "9",
         "tags" : "Relationship"
       }, {
         "description" : "nutzt",
         "destinationId" : "34",
-        "id" : "119",
+        "id" : "128",
         "properties" : {
-          "structurizr.dsl.identifier" : "e2f510dc-42c0-4025-b011-bb275f5f5917"
+          "structurizr.dsl.identifier" : "36d472e0-c41d-4fa8-adb6-71d067577dc0"
         },
         "sourceId" : "9",
         "tags" : "Relationship"
       }, {
         "description" : "zeigt Inhalte",
         "destinationId" : "14",
-        "id" : "121",
+        "id" : "130",
         "properties" : {
-          "structurizr.dsl.identifier" : "865d129c-9192-446c-9fff-a60c99ce52d5"
+          "structurizr.dsl.identifier" : "61f5cbe8-69e5-49c7-b208-dca798b195ab"
         },
         "sourceId" : "9",
         "tags" : "Relationship"
@@ -323,51 +349,51 @@
       "relationships" : [ {
         "description" : "pusht suchbare Inhalte",
         "destinationId" : "41",
-        "id" : "98",
+        "id" : "102",
         "properties" : {
-          "structurizr.dsl.identifier" : "c9488b37-7d0f-45d6-9d96-467c2e99cee3"
+          "structurizr.dsl.identifier" : "9905f084-30ac-4062-a701-8a398d67ebe3"
         },
         "sourceId" : "14",
         "tags" : "Relationship"
       }, {
         "description" : "konsumiert Bilder und ruft Dokumente ab",
         "destinationId" : "17",
-        "id" : "99",
+        "id" : "103",
         "properties" : {
-          "structurizr.dsl.identifier" : "989a6f35-784d-48d8-a58b-1e46e4f1021b"
+          "structurizr.dsl.identifier" : "259668c8-0ce7-4b88-925d-acd0ddbbe9f2"
         },
         "sourceId" : "14",
         "tags" : "Relationship"
       }, {
         "description" : "ruft Zielgruppen ab",
         "destinationId" : "53",
-        "id" : "101",
+        "id" : "105",
         "properties" : {
-          "structurizr.dsl.identifier" : "b732cbff-5b45-44cb-a959-13bd1bf1b397"
+          "structurizr.dsl.identifier" : "fbff7e99-3a48-401e-aa8d-0ea02da25124"
         },
         "sourceId" : "14",
         "tags" : "Relationship"
       }, {
         "description" : "ruft Zielgruppen ab",
         "destinationId" : "52",
-        "id" : "102",
-        "linkedRelationshipId" : "101",
+        "id" : "106",
+        "linkedRelationshipId" : "105",
         "sourceId" : "14"
       }, {
         "description" : "auth",
         "destinationId" : "59",
-        "id" : "103",
+        "id" : "107",
         "properties" : {
-          "structurizr.dsl.identifier" : "648d4041-19a2-403a-9a75-180839e79192"
+          "structurizr.dsl.identifier" : "b99a6341-94d7-4c46-b639-20cc9d1342b5"
         },
         "sourceId" : "14",
         "tags" : "Relationship"
       }, {
-        "description" : "ruft alle vorhandenen Zielgruppen ab",
+        "description" : "ruft Zielgruppen ab",
         "destinationId" : "16",
-        "id" : "113",
+        "id" : "121",
         "properties" : {
-          "structurizr.dsl.identifier" : "3b6ff467-61e0-4333-9fba-b7217ecd09b8"
+          "structurizr.dsl.identifier" : "224eb6a4-c6d1-43d7-80b9-32e11111a598"
         },
         "sourceId" : "14",
         "tags" : "Relationship,legacy"
@@ -492,18 +518,18 @@
       "relationships" : [ {
         "description" : "zeigt Daten",
         "destinationId" : "16",
-        "id" : "114",
+        "id" : "123",
         "properties" : {
-          "structurizr.dsl.identifier" : "d1fcfc63-4c4c-44ef-bc8f-2f954b2d7813"
+          "structurizr.dsl.identifier" : "f31ace35-a6c6-4c87-9b2a-bf406aa43875"
         },
         "sourceId" : "25",
         "tags" : "Relationship"
       }, {
         "description" : "bezieht Inhalt aus",
         "destinationId" : "15",
-        "id" : "115",
+        "id" : "124",
         "properties" : {
-          "structurizr.dsl.identifier" : "857b1d18-2166-4892-92ff-17b91b8fe6e3"
+          "structurizr.dsl.identifier" : "3e4fde9a-4219-46fa-b7db-d832c2cc9e76"
         },
         "sourceId" : "25",
         "tags" : "Relationship"
@@ -602,9 +628,9 @@
       "relationships" : [ {
         "description" : "basiert auf",
         "destinationId" : "23",
-        "id" : "120",
+        "id" : "129",
         "properties" : {
-          "structurizr.dsl.identifier" : "29ba99b3-134e-4f7a-a908-ba8d9e53221e"
+          "structurizr.dsl.identifier" : "16b22dad-3d48-4c49-838b-049c94a64ec2"
         },
         "sourceId" : "34",
         "tags" : "Relationship"
@@ -633,26 +659,26 @@
       "relationships" : [ {
         "description" : "pusht suchbare Inhalte",
         "destinationId" : "41",
-        "id" : "100",
+        "id" : "104",
         "properties" : {
-          "structurizr.dsl.identifier" : "ab1cddfa-749b-4869-800c-7b4c4d2bae69"
+          "structurizr.dsl.identifier" : "0c07b7c0-4a66-4287-b6fe-85829712d3bb"
         },
         "sourceId" : "36",
         "tags" : "Relationship"
       }, {
         "description" : "ruft Zielgruppen ab",
         "destinationId" : "53",
-        "id" : "104",
+        "id" : "108",
         "properties" : {
-          "structurizr.dsl.identifier" : "678c00a6-14e6-4d4c-b157-0e9fdcf19a0e"
+          "structurizr.dsl.identifier" : "df334fd8-40b3-4d44-b1f2-ecaf0acd54aa"
         },
         "sourceId" : "36",
         "tags" : "Relationship"
       }, {
         "description" : "ruft Zielgruppen ab",
         "destinationId" : "52",
-        "id" : "105",
-        "linkedRelationshipId" : "104",
+        "id" : "109",
+        "linkedRelationshipId" : "108",
         "sourceId" : "36"
       } ],
       "tags" : "Element,Software System,SDT Quali"
@@ -809,17 +835,17 @@
       "relationships" : [ {
         "description" : "speichert Zielgruppen Zutaten",
         "destinationId" : "43",
-        "id" : "107",
+        "id" : "111",
         "properties" : {
-          "structurizr.dsl.identifier" : "2383c14b-9d29-40b8-9434-335b915788f3"
+          "structurizr.dsl.identifier" : "1a282341-f383-479a-9b8a-e213f709f934"
         },
         "sourceId" : "51",
         "tags" : "Relationship"
       }, {
         "description" : "speichert Zielgruppen Zutaten",
         "destinationId" : "42",
-        "id" : "108",
-        "linkedRelationshipId" : "107",
+        "id" : "112",
+        "linkedRelationshipId" : "111",
         "sourceId" : "51"
       } ],
       "tags" : "Element,Software System,Andere"
@@ -836,7 +862,7 @@
           "destinationId" : "43",
           "id" : "54",
           "properties" : {
-            "structurizr.dsl.identifier" : "b775abd9-e46d-4b0e-ae18-f13c234813b1"
+            "structurizr.dsl.identifier" : "df1229bd-5884-429c-93a0-039d9f6f2a2a"
           },
           "sourceId" : "53",
           "tags" : "Relationship"
@@ -852,7 +878,7 @@
       } ],
       "documentation" : {
         "sections" : [ {
-          "content" : "# Zielgruppen System\n\n## Einführung und Ziele\n\nIm Kontext der InvestmentWelt werden verschiedene Inhalte nur für bestimmte Nutzergruppen ausgespielt.\n\nDazu werden Nutzer unter anderem in sogenannte Zielgruppen eingeteilt und Inhalte mit den entsprechenden Zielgruppen verknüpft.\nBei der Anzeige der Inhalte wird dann geprüft, ob der aktuelle Nutzer in der zugehörigen Zielgruppe ist.\n\n### Aufgabenstellung\n\nDie Lösung umfasst zwei Kernpunkte:\n\n1. Die Definition der Zielgruppen anhand verschiedener Kriterien\n1. Bereitstellung der Zielgruppen Daten für die Nutzung durch die Umsysteme\n\n### Qualitätsziele\n\n1. Die Zielgruppen Definition soll komfortabler funktionieren als in der bisherigen Liferay basierten Lösung. Idealerweise durchführbar durch Redaktionsmitglieder selber, anstatt durch Expert*Innen.\n1. Zielgruppen Zugehörigkeit ist bei Änderungen innerhalb von 1h aktualisiert\n\n## Randbedingungen\n\n### Technische Randbedingungen\n\n### Organisatorische Randbedingungen\n\nLiferay wird Ende 2025 abgeschaltet. Bis dahin muss mindestens eine Übergangslösung produktiv sein und die Umsysteme umgestellt haben.\n\n### Konventionen\n\n## Kontextabgrenzung\n\n### Fachlicher Kontext\n\n![](embed:zielgruppen-api-system-landscape)\n\n### Technischer- oder Verteilungskontext\n\n## Lösungsstrategie\n\nDie Lösung für das Zielgruppen System sieht vor MS Dynamics als Basis der Zielgruppen Berechnung zu verwenden. Dies hat sich aus der Betrachtung verschiedener Optionen als vielversprechend herauskristallisiert. Vor allem weil viele Daten für die Berechnung bereits in MS Dynamics vorhanden sind. Darüber hinaus bietet MS Dynamics komfortable Werkzeuge für die Filterung und Segmentierung von Nutzern, was für die Zielgruppen Definition verwendet werden kann. Ausserdem kann die Lösung von Produktweiterentwicklungen bspw. im Bereich KI direkt profitieren.\n\n### Zielbild\n\nDie Analyse hat gezeigt, dass Customer Insights Data eine vielversprechende Lösung nicht nur für das Zielgruppen Problem sein kann.\nAls Customer Data Platform ermöglicht es die Anbindung verschiedener Datenquellen (bspw. Mitarbeiterverwaltung und Customer Insights Journeys) und die Segmentierung der Nutzer auf Basis der zusammengeführten Daten. Auch verfügt Customer Insights Data über alle notwendigen APIs für das Abrufen der Daten.\n\nAuf der andere Seite ist Customer Insights Data aktuell noch nicht im Einsatz und der Prozess der Einführung könnte die Liferay Ablösung gefährden. Ausserdem sollen die Möglichkeiten von Customer Insights Data noch besser verstanden werden, um auch andere Anwendungsfälle ggf.. damit abzubilden.\n\nCustomer Insights Data soll im Jahr 2025 näher betrachtet und eingeführt werden.\nDie Zielgruppen Lösung soll dann auch darauf umgebaut werden.\n\n### Übergangslösung\n\nUm die Liferay Ablösung durch die Einführung von Customer Insights Data nicht zu gefährden wurde entschieden zunächst eine Übergangslösung auf Basis von dem bereits in betrieb-befindlichen Customer Insights Journeys zu entwickeln.\nDie damit einhergehenden Restriktionen (Segment Limit und fehlende Schnittstellen) werden durch Eigenentwicklung ergänzt.\nNach der Einführung der Ziellösung wird die Übergangslösung zurückgebaut.\n\n#### Definition Zielgruppen \n\nDie Übergangslösung sieht vor, das ein Zielgruppen-Admin innerhalb von Customer Insights Journeys Ansichten definiert, um Kontakte auf Basis von Felder, Beziehungen oder Merkmalen zu selektieren. Eine oder mehrere Ansichten, die letztlich Listen von Kontakten darstellen, können über eine neudefinierte \"Zielgruppen\" Entität referenziert wird. Über die \"Zielgruppen\"-Entität können zudem Ansichten verlinkt werden, deren Kontakte aus der Zielgruppe herausgefiltert werden sollen. \n\n#### Abruf Zielgruppen\n\nDie Ergebnismenge an Kontakten, die sich aus dieser Zielgruppen Definition ergibt wird in regelmäßigen Abständen in eine effizient und kostengünstigen Abfrage-optimierten Struktur übertragen und per Schnittstelle bereit gestellt.\n\nDie Customer Insights Journeys Schnittstellen werden über das API-Management der Konsumenten der Domäne Web-Portale zur Verfügung gestellt. Dabei übernimmt das API-Management kleinere Datentransformationen, sowie die Authentifizierung für den Zugriff aufs CRM.\n\n##### Datenmodell\n\nEine Zielgruppe hat die folgenden Attribute:\n\n* id (numerisch)\n* name / title (string)\n* description (string)\n\n\n#### Zulieferung benötigter Daten\n\nDaten, die für die Zielgruppen Definition benötigt werden, müssen im Customer Insights Journeys liegen. Für einen Großteil an Daten ist diese bereits der Fall. Darüber hinaus lassen sich zwei Wege unterscheiden, wie Daten in das System eingespielt werden: Automatisiert und manuell.\n\n##### Automatisierte Zulieferung \n\nEine wichtige Zutat für die Zielgruppen Definition sind Rollengruppen. Dabei handelt es sich um eine Zusammenfassung mehrere Rechte. Ist einem Nutzer eines der Rechte einer Rollengruppe zugeordnet, gehört der Nutzer der entsprechenden Rollengruppe an. Rollengruppen und deren Rechte-Konfiguration ist ziemlich stabil. Allerdings haben wir mehrere hundert Rechteveränderungen täglich, diese auf die Rollengruppen Zugehörigkeit auswirken kann. Deswegen soll diese Rollengruppenzugehörigkeit automatisiert an das Customer Insights Journeys übertragen werden.\n\nDie Rechte Verwaltung findet heute in der Mitarbeiterverwaltung (zukünftig Nutzerverwaltung) statt. Es gibt mit der Ladezone bereits einen etablierten Weg für die Übertragung von Mitarbeiterdaten zwischen Mitarbeiterverwaltung und Customer Insights Journeys.\nDieser Weg wird für die benötigte Zulieferung pragmatisch erweitert.\nDer Datensatz, den die Mitarbeiterverwaltung an das Customer Insights Journeys im Falle von Änderungen an einem Nutzer sendet, wird um ein Feld für die Rollengruppen erweitert. Dieses Feld enthält eine Komma-separierte Liste der Namen der Rollengruppen, denen der Nutzer angehört.\n\nEin weiteres Merkmal welches für die Zielgruppen Definition verwendet wird, ist die an der Bank definierte Marktforschungszustimmung. Diese Zustimmung wird auch innerhalb der Mitarbeiterverwaltung durch einen Administration der Bank gepflegt. Auch dieses Feld wird über den Weg der Ladezone von der Mitarbeiterverwaltung and Customer Insights Journeys übermittelt.\nDer Einfachheit halber wird seitens der Mitarbeiterverwaltung die Marktforschungszustimmung der Bank als Feld am Mitarbeiter übertragen, da es aktuell keinen etablierten Weg gibt Bankdaten aus der Mitarbeiterverwaltung an Customer Insights Journeys zu übertragen.\n\n##### Manuelle Zulieferung\n\nWerden weitere Informationen im Customer Insights Journeys benötigt und vor allem wenn diese nicht ständig (sprich mehrmals wöchentlich oder monatlich) geändert werden müssen, können diese auch manuell ins Customer Insights Journeys eingespielt werden.\n\nHierfür existiert mit den Merkmalen bereits eine andere Eigenentwicklung in Customer Insights Journeys. Merkmale können zentral definiert werden und dann einem oder mehreren Kontakten zugewiesen werden. Auch ein Massenimport über Excel/CSV ist bereits möglich.\n\n##### Daten Übersicht\n\n| Daten   |      Herkunft      |  Übertragungsweg |\n|----------|:-------------:|------:|\n| Rollengruppen pro Mitarbeiter |  Mitarbeiterverwaltung | automatisiert über Ladezone |\n| Marktforschungszustimmung |    Mitarbeiterverwaltung   |   automatisiert über Ladezone |\n| Unregelmäßige Ad-hoc Daten | verschiedene |    manuell über Merkmale in CRM |\n\n## Bausteinsicht\n\n### Zielgruppen System Kontext\n\nDie folgende Grafik zeigt den Kontext des Zielgruppen System.\n\n![](embed:zielgruppen-system-context)\n\n### Zielgruppen System Kontext Konsumenten\n\nDie folgende Grafik zeigt den Kontext des Zielgruppen System mit Fokus auf beispielhafte Konsumenten.\n\n![](embed:zielgruppen-system-context-konsumenten)\n\n### Zielgruppen System Kontext MS Dynamics\n\nDie folgende Grafik zeigt den Kontext des Zielgruppen System mit Fokus auf MS Dynamics.\n\n![](embed:zielgruppen-system-context-msdynamics)\n\n\n### Ebene 2\n\n## Laufzeitsicht\n\n### Abruf der Zielgruppen für einen Nutzer\n\nDie folgende Darstellung zeigt den Abruf der Zielgruppen für den eingeloggten Nutzer.\nHierbei ist hervorzuheben, dass das konsumierende System - hier Magnolia, die Zielgruppen API mit dem Token des eingeloggten Users aufruft.\nDamit nicht jeder Nutzer auf die Schnittstellen von MS Dynamics berechtigt werden muss findet Zugriff über einen technischen User statt.\nEs ist Aufgabe des Zielgruppen Systems, den Token des Nutzers zu prüfen, daraus den UUKEY zu extrahieren und diesen an MS Dynamics für die Abfrage zu schicken.\n\n![](embed:zielgruppen-api-get-target-groups-for-user)\n\n### Zielgruppen basierte Inhaltsausspielung\n\nDie folgende Darstellung zeigt den Ablauf für die Zielgruppen basierte Inhaltsausspielung.\n\n![](embed:zielgruppen-api-magnolia-content-ausspielung)\n\n### Abruf aller Zielgruppen\n\nDie folgende Darstellung zeigt den Ablauf für der Abruf aller Zielgruppen für den Anwendungsfall der redaktionelle Arbeit an Inhalten in Magnolia.\n\n![](embed:zielgruppen-api-magnolia-redaktion)\n\n## Verteilungssicht\n\n### Ebene 1\n\n## Querschnittliche Konzepte\n\n### Fachliche Struktur und Modelle\n\n#### Zielgruppe\n\nEine Zielgruppe besteht aus\n\n* id (numerisch - bigint)\n* name / title\n* description\n\n#### \n\n### Architektur und Entwurfsmuster\n\n### Unter-der-Haube\n\n### User Experience\n\n## Entwurfsentscheidungen\n\n## Qualitätsanforderungen\n\n### Qualitätsbaum\n\n### Qualitätsszenarien\n\n## Risiken und technische Schulden\n\n## Glossar\n\n",
+          "content" : "# Zielgruppen System\n\n## Einführung und Ziele\n\nIm Kontext der InvestmentWelt werden verschiedene Inhalte nur für bestimmte Nutzergruppen ausgespielt.\n\nDazu werden Nutzer unter anderem in sogenannte Zielgruppen eingeteilt und Inhalte mit den entsprechenden Zielgruppen verknüpft.\nBei der Anzeige der Inhalte wird dann geprüft, ob der aktuelle Nutzer in der zugehörigen Zielgruppe ist.\n\n### Aufgabenstellung\n\nDie Lösung umfasst zwei Kernpunkte:\n\n1. Die Definition der Zielgruppen anhand verschiedener Kriterien\n1. Bereitstellung der Zielgruppen Daten für die Nutzung durch die Umsysteme\n\n### Qualitätsziele\n\n1. Die Zielgruppen Definition soll komfortabler funktionieren als in der bisherigen Liferay-basierten Lösung. Idealerweise durchführbar durch Redaktionsmitglieder selber, anstatt durch Expert*Innen.\n1. Zielgruppen Zugehörigkeit ist bei Änderungen innerhalb von 1h aktualisiert\n\n## Randbedingungen\n\n### Technische Randbedingungen\n\n### Organisatorische Randbedingungen\n\nLiferay wird Ende 2025 abgeschaltet. Bis dahin muss mindestens eine Übergangslösung produktiv sein und die Umsysteme umgestellt haben.\n\n### Konventionen\n\n## Kontextabgrenzung\n\n### Fachlicher Kontext\n\nDas folgende Bild zeigt die aktuelle Liferay-basierte Lösung:\n\n![](embed:zielgruppen-api-system-landscape-aktuell)\n\n\n### Technischer- oder Verteilungskontext\n\n## Lösungsstrategie\n\nDie Lösung für das Zielgruppen System sieht vor MS Dynamics als Basis der Zielgruppen Berechnung zu verwenden. Dies hat sich aus der Betrachtung verschiedener Optionen als vielversprechend herauskristallisiert. Vor allem weil viele Daten für die Berechnung bereits in MS Dynamics vorhanden sind. Darüber hinaus bietet MS Dynamics komfortable Werkzeuge für die Filterung und Segmentierung von Nutzern, was für die Zielgruppen Definition verwendet werden kann. Ausserdem kann die Lösung von Produktweiterentwicklungen bspw. im Bereich KI direkt profitieren.\n\n### Zielbild\n\nDie Analyse hat gezeigt, dass Customer Insights Data eine vielversprechende Lösung nicht nur für das Zielgruppen Problem sein kann.\nAls Customer Data Platform ermöglicht es die Anbindung verschiedener Datenquellen (bspw. Mitarbeiterverwaltung und Customer Insights Journeys) und die Segmentierung der Nutzer auf Basis der zusammengeführten Daten. Auch verfügt Customer Insights Data über alle notwendigen APIs für das Abrufen der Daten.\n\nAuf der andere Seite ist Customer Insights Data aktuell noch nicht im Einsatz und der Prozess der Einführung könnte die Liferay Ablösung gefährden. Ausserdem sollen die Möglichkeiten von Customer Insights Data noch besser verstanden werden, um auch andere Anwendungsfälle ggf.. damit abzubilden.\n\nCustomer Insights Data soll im Jahr 2025 näher betrachtet und eingeführt werden.\nDie Zielgruppen Lösung soll dann auch darauf umgebaut werden.\n\n### Übergangslösung\n\nUm die Liferay Ablösung durch die Einführung von Customer Insights Data nicht zu gefährden wurde entschieden zunächst eine Übergangslösung auf Basis von dem bereits in betrieb-befindlichen Customer Insights Journeys zu entwickeln.\nDie damit einhergehenden Restriktionen (Segment Limit und fehlende Schnittstellen) werden durch Eigenentwicklung ergänzt.\nNach der Einführung der Ziellösung wird die Übergangslösung zurückgebaut.\n\nDie folgende Darstellung zeigt das Personen und System Zusammenspiel in der Übergangslösung.\n\n![](embed:zielgruppen-api-system-landscape)\n\n#### Definition Zielgruppen \n\nDie Übergangslösung sieht vor, das ein Zielgruppen-Admin innerhalb von Customer Insights Journeys Ansichten definiert, um Kontakte auf Basis von Felder, Beziehungen oder Merkmalen zu selektieren. Eine oder mehrere Ansichten, die letztlich Listen von Kontakten darstellen, können über eine neudefinierte \"Zielgruppen\" Entität referenziert wird. Über die \"Zielgruppen\"-Entität können zudem Ansichten verlinkt werden, deren Kontakte aus der Zielgruppe herausgefiltert werden sollen. \n\n#### Abruf Zielgruppen\n\nDie Ergebnismenge an Kontakten, die sich aus dieser Zielgruppen Definition ergibt wird in regelmäßigen Abständen in eine effizient und kostengünstigen Abfrage-optimierten Struktur übertragen und per Schnittstelle bereit gestellt.\n\nDie Customer Insights Journeys Schnittstellen werden über das API-Management der Konsumenten der Domäne Web-Portale zur Verfügung gestellt. Dabei übernimmt das API-Management kleinere Datentransformationen, sowie die Authentifizierung für den Zugriff aufs CRM.\n\n##### Datenmodell\n\nEine Zielgruppe hat die folgenden Attribute:\n\n* id (numerisch)\n* name / title (string)\n* description (string)\n\n\n#### Zulieferung benötigter Daten\n\nDaten, die für die Zielgruppen Definition benötigt werden, müssen im Customer Insights Journeys liegen. Für einen Großteil an Daten ist diese bereits der Fall. Darüber hinaus lassen sich zwei Wege unterscheiden, wie Daten in das System eingespielt werden: Automatisiert und manuell.\n\n##### Automatisierte Zulieferung \n\nEine wichtige Zutat für die Zielgruppen Definition sind Rollengruppen. Dabei handelt es sich um eine Zusammenfassung mehrere Rechte. Ist einem Nutzer eines der Rechte einer Rollengruppe zugeordnet, gehört der Nutzer der entsprechenden Rollengruppe an. Rollengruppen und deren Rechte-Konfiguration ist ziemlich stabil. Allerdings haben wir mehrere hundert Rechteveränderungen täglich, diese auf die Rollengruppen Zugehörigkeit auswirken kann. Deswegen soll diese Rollengruppenzugehörigkeit automatisiert an das Customer Insights Journeys übertragen werden.\n\nDie Rechte Verwaltung findet heute in der Mitarbeiterverwaltung (zukünftig Nutzerverwaltung) statt. Es gibt mit der Ladezone bereits einen etablierten Weg für die Übertragung von Mitarbeiterdaten zwischen Mitarbeiterverwaltung und Customer Insights Journeys.\nDieser Weg wird für die benötigte Zulieferung pragmatisch erweitert.\nDer Datensatz, den die Mitarbeiterverwaltung an das Customer Insights Journeys im Falle von Änderungen an einem Nutzer sendet, wird um ein Feld für die Rollengruppen erweitert. Dieses Feld enthält eine Komma-separierte Liste der Namen der Rollengruppen, denen der Nutzer angehört.\n\nEin weiteres Merkmal welches für die Zielgruppen Definition verwendet wird, ist die an der Bank definierte Marktforschungszustimmung. Diese Zustimmung wird auch innerhalb der Mitarbeiterverwaltung durch einen Administration der Bank gepflegt. Auch dieses Feld wird über den Weg der Ladezone von der Mitarbeiterverwaltung and Customer Insights Journeys übermittelt.\nDer Einfachheit halber wird seitens der Mitarbeiterverwaltung die Marktforschungszustimmung der Bank als Feld am Mitarbeiter übertragen, da es aktuell keinen etablierten Weg gibt Bankdaten aus der Mitarbeiterverwaltung an Customer Insights Journeys zu übertragen.\n\n##### Manuelle Zulieferung\n\nWerden weitere Informationen im Customer Insights Journeys benötigt und vor allem wenn diese nicht ständig (sprich mehrmals wöchentlich oder monatlich) geändert werden müssen, können diese auch manuell ins Customer Insights Journeys eingespielt werden.\n\nHierfür existiert mit den Merkmalen bereits eine andere Eigenentwicklung in Customer Insights Journeys. Merkmale können zentral definiert werden und dann einem oder mehreren Kontakten zugewiesen werden. Auch ein Massenimport über Excel/CSV ist bereits möglich.\n\n##### Daten Übersicht\n\n| Daten   |      Herkunft      |  Übertragungsweg |\n|----------|:-------------:|------:|\n| Rollengruppen pro Mitarbeiter |  Mitarbeiterverwaltung | automatisiert über Ladezone |\n| Marktforschungszustimmung |    Mitarbeiterverwaltung   |   automatisiert über Ladezone |\n| Unregelmäßige Ad-hoc Daten | verschiedene |    manuell über Merkmale in CRM |\n\n## Bausteinsicht\n\n### Zielgruppen System Kontext\n\nDie folgende Grafik zeigt den Kontext des Zielgruppen System.\n\n![](embed:zielgruppen-system-context)\n\n### Zielgruppen System Kontext Konsumenten\n\nDie folgende Grafik zeigt den Kontext des Zielgruppen System mit Fokus auf beispielhafte Konsumenten.\n\n![](embed:zielgruppen-system-context-konsumenten)\n\n### Zielgruppen System Kontext MS Dynamics\n\nDie folgende Grafik zeigt den Kontext des Zielgruppen System mit Fokus auf MS Dynamics.\n\n![](embed:zielgruppen-system-context-msdynamics)\n\n\n### Ebene 2\n\n## Laufzeitsicht\n\n### Abruf der Zielgruppen für einen Nutzer\n\nDie folgende Darstellung zeigt den Abruf der Zielgruppen für den eingeloggten Nutzer.\nHierbei ist hervorzuheben, dass das konsumierende System - hier Magnolia, die Zielgruppen API mit dem Token des eingeloggten Users aufruft.\nDamit nicht jeder Nutzer auf die Schnittstellen von MS Dynamics berechtigt werden muss findet Zugriff über einen technischen User statt.\nEs ist Aufgabe des Zielgruppen Systems, den Token des Nutzers zu prüfen, daraus den UUKEY zu extrahieren und diesen an MS Dynamics für die Abfrage zu schicken.\n\n![](embed:zielgruppen-api-get-target-groups-for-user)\n\n### Zielgruppen basierte Inhaltsausspielung\n\nDie folgende Darstellung zeigt den Ablauf für die Zielgruppen basierte Inhaltsausspielung.\n\n![](embed:zielgruppen-api-magnolia-content-ausspielung)\n\n### Abruf aller Zielgruppen\n\nDie folgende Darstellung zeigt den Ablauf für der Abruf aller Zielgruppen für den Anwendungsfall der redaktionelle Arbeit an Inhalten in Magnolia.\n\n![](embed:zielgruppen-api-magnolia-redaktion)\n\n## Verteilungssicht\n\n### Ebene 1\n\n## Querschnittliche Konzepte\n\n### Fachliche Struktur und Modelle\n\n#### Zielgruppe\n\nEine Zielgruppe besteht aus\n\n* id (numerisch - bigint)\n* name / title\n* description\n\n#### \n\n### Architektur und Entwurfsmuster\n\n### Unter-der-Haube\n\n### User Experience\n\n## Entwurfsentscheidungen\n\n## Qualitätsanforderungen\n\n### Qualitätsbaum\n\n### Qualitätsszenarien\n\n## Risiken und technische Schulden\n\n## Glossar\n\n",
           "filename" : "zielgruppen-doku.md",
           "format" : "Markdown",
           "order" : 1,
@@ -890,11 +916,26 @@
         "structurizr.dsl.identifier" : "azure_adb_2_c"
       },
       "relationships" : [ {
+        "description" : "ruft Zielgruppen ab",
+        "destinationId" : "53",
+        "id" : "116",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1d4bf8ce-0e97-4ba5-95d1-fa9ef7f6dce4"
+        },
+        "sourceId" : "58",
+        "tags" : "Relationship"
+      }, {
+        "description" : "ruft Zielgruppen ab",
+        "destinationId" : "52",
+        "id" : "117",
+        "linkedRelationshipId" : "116",
+        "sourceId" : "58"
+      }, {
         "description" : "ruft Zielgruppen für aktuellen User ab",
         "destinationId" : "16",
-        "id" : "112",
+        "id" : "120",
         "properties" : {
-          "structurizr.dsl.identifier" : "65047357-cf27-4c1a-8d44-9adeef0e67a8"
+          "structurizr.dsl.identifier" : "923380ff-8619-4cd7-9985-ae5e1f688eb9"
         },
         "sourceId" : "58",
         "tags" : "Relationship,legacy"
@@ -923,7 +964,7 @@
           "destinationId" : "64",
           "id" : "65",
           "properties" : {
-            "structurizr.dsl.identifier" : "1dc62a79-bdd1-4bbc-bafe-34c7afbbaae9"
+            "structurizr.dsl.identifier" : "24f55a64-c3c3-4480-9220-00fc500e0b6e"
           },
           "sourceId" : "61",
           "tags" : "Relationship"
@@ -942,7 +983,7 @@
           "destinationId" : "66",
           "id" : "67",
           "properties" : {
-            "structurizr.dsl.identifier" : "dcb90720-93d1-4296-aa21-0c6ad901ac21"
+            "structurizr.dsl.identifier" : "f48c5335-a2c4-49be-8168-397bde2a507d"
           },
           "sourceId" : "64",
           "tags" : "Relationship"
@@ -969,64 +1010,22 @@
         "relationships" : [ {
           "description" : "reads MV changes",
           "destinationId" : "66",
-          "id" : "76",
+          "id" : "89",
           "properties" : {
-            "structurizr.dsl.identifier" : "9c463acb-b1a6-4eee-8c3a-0838b8bd151d"
+            "structurizr.dsl.identifier" : "1208fff9-8b56-4726-8784-772cef178930"
           },
           "sourceId" : "68",
           "tags" : "Relationship",
           "technology" : "JPA"
-        }, {
-          "description" : "writes MV changes into NV DB",
-          "destinationId" : "74",
-          "id" : "77",
-          "properties" : {
-            "structurizr.dsl.identifier" : "7761fbfe-05d9-4c39-b3f6-ccdd5ebdd69e"
-          },
-          "sourceId" : "68",
-          "tags" : "Relationship",
-          "technology" : "JPA"
-        }, {
-          "description" : "writes MV changes into NV DB",
-          "destinationId" : "69",
-          "id" : "78",
-          "linkedRelationshipId" : "77",
-          "sourceId" : "68",
-          "technology" : "JPA"
-        }, {
-          "description" : "reads NV changes",
-          "destinationId" : "74",
-          "id" : "81",
-          "properties" : {
-            "structurizr.dsl.identifier" : "2ebcefd2-f393-4ca1-8714-bfdc58e893fc"
-          },
-          "sourceId" : "68",
-          "tags" : "Relationship",
-          "technology" : "Event driven"
         }, {
           "description" : "writes NV changes into UOA",
           "destinationId" : "66",
-          "id" : "82",
+          "id" : "90",
           "properties" : {
-            "structurizr.dsl.identifier" : "c58c3e94-6799-4d9c-890b-b9a6283322de"
+            "structurizr.dsl.identifier" : "07c73b67-1684-4d0c-bccf-4034b6973b0a"
           },
           "sourceId" : "68",
           "tags" : "Relationship"
-        }, {
-          "description" : "reuses code",
-          "destinationId" : "72",
-          "id" : "83",
-          "properties" : {
-            "structurizr.dsl.identifier" : "44d0707a-2c1d-46b6-9f37-45b92b2c883b"
-          },
-          "sourceId" : "68",
-          "tags" : "Relationship"
-        }, {
-          "description" : "reuses code",
-          "destinationId" : "71",
-          "id" : "84",
-          "linkedRelationshipId" : "83",
-          "sourceId" : "68"
         } ],
         "tags" : "Element,Container"
       } ],
@@ -1047,46 +1046,20 @@
         "structurizr.dsl.identifier" : "mitarbeiterverwaltung"
       },
       "relationships" : [ {
-        "description" : "writes MV changes into NV DB",
-        "destinationId" : "74",
-        "id" : "79",
-        "linkedRelationshipId" : "77",
-        "sourceId" : "60",
-        "technology" : "JPA"
-      }, {
-        "description" : "writes MV changes into NV DB",
-        "destinationId" : "69",
-        "id" : "80",
-        "linkedRelationshipId" : "77",
-        "sourceId" : "60",
-        "technology" : "JPA"
-      }, {
-        "description" : "reuses code",
-        "destinationId" : "72",
-        "id" : "85",
-        "linkedRelationshipId" : "83",
-        "sourceId" : "60"
-      }, {
-        "description" : "reuses code",
-        "destinationId" : "71",
-        "id" : "86",
-        "linkedRelationshipId" : "83",
-        "sourceId" : "60"
-      }, {
         "description" : "speichert Zielgruppen Zutaten",
         "destinationId" : "51",
-        "id" : "106",
+        "id" : "110",
         "properties" : {
-          "structurizr.dsl.identifier" : "da629e36-3466-4b44-881b-d1767f71ec47"
+          "structurizr.dsl.identifier" : "19a6c4d4-4ac2-4a19-ad16-c54d08c847f6"
         },
         "sourceId" : "60",
         "tags" : "Relationship"
       }, {
         "description" : "speichert Rechte für Rollengruppen Bildung",
         "destinationId" : "16",
-        "id" : "111",
+        "id" : "119",
         "properties" : {
-          "structurizr.dsl.identifier" : "d0e2cd4e-8d65-42da-8306-65bf07492f37"
+          "structurizr.dsl.identifier" : "9afc6a3d-19f6-4f2c-aa81-32e2ce05a330"
         },
         "sourceId" : "60",
         "tags" : "Relationship,legacy"
@@ -1096,19 +1069,25 @@
       "containers" : [ {
         "documentation" : { },
         "id" : "70",
-        "name" : "Frontend",
+        "name" : "NV Frontend",
         "properties" : {
           "structurizr.dsl.identifier" : "nvfrontend"
         },
         "relationships" : [ {
           "description" : "Consumes API",
-          "destinationId" : "71",
+          "destinationId" : "72",
           "id" : "73",
           "properties" : {
-            "structurizr.dsl.identifier" : "c8ea618c-e505-4f52-a1f2-ec242f5ca607"
+            "structurizr.dsl.identifier" : "e2d82b79-ccee-40e6-a4b3-ceda907ff95d"
           },
           "sourceId" : "70",
           "tags" : "Relationship"
+        }, {
+          "description" : "Consumes API",
+          "destinationId" : "71",
+          "id" : "74",
+          "linkedRelationshipId" : "73",
+          "sourceId" : "70"
         } ],
         "tags" : "Element,Container,SD User",
         "technology" : "Vue SPA"
@@ -1116,34 +1095,119 @@
         "components" : [ {
           "documentation" : { },
           "id" : "72",
-          "name" : "NV DBOs",
+          "name" : "NV Backend API",
           "properties" : {
-            "structurizr.dsl.identifier" : "nvdbos"
+            "structurizr.dsl.identifier" : "nvbackendapi"
+          },
+          "relationships" : [ {
+            "description" : "uses",
+            "destinationId" : "76",
+            "id" : "77",
+            "properties" : {
+              "structurizr.dsl.identifier" : "c10f807a-23b9-40e2-b259-59151b6e0918"
+            },
+            "sourceId" : "72",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Reads from and writes to",
+            "destinationId" : "79",
+            "id" : "80",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ea290a4f-ac18-46b3-bf46-ae77f53e4072"
+            },
+            "sourceId" : "72",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Java Quarkus"
+        }, {
+          "documentation" : { },
+          "id" : "75",
+          "name" : "MV/NV Sync Application",
+          "properties" : {
+            "structurizr.dsl.identifier" : "nvbackendsync"
+          },
+          "relationships" : [ {
+            "description" : "uses",
+            "destinationId" : "76",
+            "id" : "78",
+            "properties" : {
+              "structurizr.dsl.identifier" : "b7e9d5bd-28fe-44e2-bdd2-bb02b36643ff"
+            },
+            "sourceId" : "75",
+            "tags" : "Relationship"
+          }, {
+            "description" : "writes MV changes into NV DB",
+            "destinationId" : "79",
+            "id" : "82",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8058a946-ecb2-438e-b926-08927b16d676"
+            },
+            "sourceId" : "75",
+            "tags" : "Relationship",
+            "technology" : "JPA"
+          }, {
+            "description" : "reads MV changes",
+            "destinationId" : "66",
+            "id" : "83",
+            "properties" : {
+              "structurizr.dsl.identifier" : "d032b21f-7533-49a5-b4de-6dd80c0dd4a6"
+            },
+            "sourceId" : "75",
+            "tags" : "Relationship",
+            "technology" : "JPA"
+          }, {
+            "description" : "reads MV changes",
+            "destinationId" : "60",
+            "id" : "84",
+            "linkedRelationshipId" : "83",
+            "sourceId" : "75",
+            "technology" : "JPA"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Java Quarkus"
+        }, {
+          "documentation" : { },
+          "id" : "76",
+          "name" : "Shared Code",
+          "properties" : {
+            "structurizr.dsl.identifier" : "shared"
           },
           "tags" : "Element,Component",
-          "technology" : "Maven Module"
+          "technology" : "Java"
         } ],
         "documentation" : { },
         "id" : "71",
-        "name" : "Backend / API",
+        "name" : "NV Backend",
         "properties" : {
           "structurizr.dsl.identifier" : "nvbackend"
         },
         "relationships" : [ {
           "description" : "Reads from and writes to",
-          "destinationId" : "74",
-          "id" : "75",
-          "properties" : {
-            "structurizr.dsl.identifier" : "23bd2965-59ee-4e63-a99a-8919ea188c71"
-          },
+          "destinationId" : "79",
+          "id" : "81",
+          "linkedRelationshipId" : "80",
+          "sourceId" : "71"
+        }, {
+          "description" : "reads MV changes",
+          "destinationId" : "66",
+          "id" : "85",
+          "linkedRelationshipId" : "83",
           "sourceId" : "71",
-          "tags" : "Relationship"
+          "technology" : "JPA"
+        }, {
+          "description" : "reads MV changes",
+          "destinationId" : "60",
+          "id" : "86",
+          "linkedRelationshipId" : "83",
+          "sourceId" : "71",
+          "technology" : "JPA"
         } ],
         "tags" : "Element,Container,SD User",
         "technology" : "Vue SPA"
       }, {
         "documentation" : { },
-        "id" : "74",
+        "id" : "79",
         "name" : "Database",
         "properties" : {
           "structurizr.dsl.identifier" : "nvdb"
@@ -1167,20 +1231,82 @@
       "properties" : {
         "structurizr.dsl.identifier" : "nutzerverwaltung"
       },
+      "relationships" : [ {
+        "description" : "reads MV changes",
+        "destinationId" : "66",
+        "id" : "87",
+        "linkedRelationshipId" : "83",
+        "sourceId" : "69",
+        "technology" : "JPA"
+      }, {
+        "description" : "reads MV changes",
+        "destinationId" : "60",
+        "id" : "88",
+        "linkedRelationshipId" : "83",
+        "sourceId" : "69",
+        "technology" : "JPA"
+      } ],
       "tags" : "Element,Software System,SD User"
     } ]
   },
   "name" : "Domäne Web-Portale",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlICJEb23DpG5lIFdlYi1Qb3J0YWxlIiB7CgogICAgIWRvY3MgZG9jcwoKICAgIG1vZGVsIHsKICAgICAgICAvLyBOdXR6ZXIKICAgICAgICBiYW5rTWl0YXJiZWl0ZXIgPSBwZXJzb24gIkJhbmttaXRhcmJlaXRlciIKICAgICAgICByZWRha3Rpb24gPSBwZXJzb24gIlJlZGFrdGlvbiIKICAgICAgICBiMmNOdXR6ZXIgPSBwZXJzb24gIkIyQyBOdXR6ZXIiCgogICAgICAgIHppZWxncnVwcGVuQWRtaW4gPSBwZXJzb24gIlppZWxncnVwcGVuIEFkbWluIgogICAgICAgIGJhbmtBZG1pbiA9IHBlcnNvbiAiQmFuayBBZG1pbiIKCiAgICAgICAgLy8gUG9ydGFsZQogICAgICAgIGl3ID0gc29mdHdhcmVTeXN0ZW0gIkludmVzdG1lbnRXZWx0IE5ldSIgIiIgIlBvcnRhbCIKICAgICAgICBpa19vbmxpbmUgPSBzb2Z0d2FyZVN5c3RlbSAiSUsgT25saW5lIiAiIiAiUG9ydGFsIgogICAgICAgIHZlcnRyaWVic0NvY2twaXQgPSBzb2Z0d2FyZVN5c3RlbSAiVmVydHJpZWJzIENvY2twaXQiICIiICJQb3J0YWwiCgogICAgICAgIC8vIFdlYnNlaXRlbgogICAgICAgIHVpcF9kZSA9IHNvZnR3YXJlU3lzdGVtICJ3d3cudW5pb24taW52ZXN0bWVudC5kZSIgInd3dy51bmlvbi1pbnZlc3RtZW50LmRlIiAiV2ViLUF1ZnRyaXR0LFVJUCIgewogICAgICAgICAgICB1cmwgaHR0cHM6Ly93d3cudW5pb24taW52ZXN0bWVudC5kZQogICAgICAgIH0KICAgICAgICB1aXBfYXQgPSBzb2Z0d2FyZVN5c3RlbSAid3d3LnVuaW9uLWludmVzdG1lbnQuYXQiICIiICJXZWItQXVmdHJpdHQsVUlQIgogICAgICAgIHVpcl9pbnRsID0gc29mdHdhcmVTeXN0ZW0gInJlYWxlc3RhdGUudW5pb24taW52ZXN0bWVudC5jb20iICIiICJXZWItQXVmdHJpdHQsVUlSIgogICAgICAgIHVtaCA9IHNvZnR3YXJlU3lzdGVtICJ1bnRlcm5laG1lbi51bmlvbi1pbnZlc3RtZW50LmRlIiAiIiAiV2ViLUF1ZnRyaXR0LFVNSCIKICAgICAgICBhdHRyYXggPSBzb2Z0d2FyZVN5c3RlbSAid3d3LmF0dHJheC5sdSIgIiIgIldlYi1BdWZ0cml0dCxBdHRyYXgiCgogICAgICAgIC8vIAoKICAgICAgICBncm91cCAiU0QgSW5mb21hbmFnZW1lbnQiIHsKICAgICAgICAgICAgbWFnbm9saWEgPSBzb2Z0d2FyZVN5c3RlbSAiTWFnbm9saWEiICJDb250ZW50IE1hbmFnZW1lbnQgU3lzdGVtIiAiU0QgSW5mb21hbmFnZW1lbnQsIFNEVCAzNDIsIFNEVCBDb2RlIGQnQXp1cmUiCiAgICAgICAgICAgIGZpcnN0X3NwaXJpdCA9IHNvZnR3YXJlU3lzdGVtICJGaXJzdFNwaXJpdCIgIkFsdGVzIENvbnRlbnQgTWFuYWdlbWVudCBTeXN0ZW0iICJTRCBJbmZvbWFuYWdlbWVudCwgU0RUIEFzc2V0IEZvcmNlIgogICAgICAgICAgICBsaWZlcmF5ID0gc29mdHdhcmVTeXN0ZW0gIkxpZmVyYXkiICJQb3J0YWwgU2VydmVyIiAiU0QgSW5mb21hbmFnZW1lbnQsIFNEVCBBc3NldCBGb3JjZSIKCiAgICAgICAgICAgIGNlbHVtID0gc29mdHdhcmVTeXN0ZW0gIkNlbHVtIiAiRGlnaXRhbCBBc3NldCBNYW5hZ2VtZW50IiAiU0QgSW5mb21hbmFnZW1lbnQsIFNEVCBBc3NldCBGb3JjZSIKICAgICAgICAgICAgbW92aW5nX2ltYWdlID0gc29mdHdhcmVTeXN0ZW0gIk1vdmluZ0ltYWdlIiAiU2FhUyBWaWRlbyBTdHJlYW1pbmcgRGllbnN0IiAiU0QgSW5mb21hbmFnZW1lbnQiCiAgICAgICAgICAgIHVuaV90dWJlID0gc29mdHdhcmVTeXN0ZW0gIlVuaVR1YmUiICJDb3Jwb3JhdGVUdWJlIFByb2R1a3Qgdm9uIE1vdmluZ0ltYWdlIiAiU0QgSW5mb21hbmFnZW1lbnQiCiAgICAgICAgICAgIGRvY19tZSA9IHNvZnR3YXJlU3lzdGVtICJEb2NNZSIgIiIKCiAgICAgICAgICAgIHVuaXZlcnNhbF9tZXNzZW5nZXIgPSBzb2Z0d2FyZVN5c3RlbSAiVW5pdmVyc2FsIE1lc3NlbmdlciIgIiIKICAgICAgICAgICAgd2ViZm9ybXMgPSBzb2Z0d2FyZVN5c3RlbSAid2ViZm9ybXMiICJEaWdpdGFsZSBGb3JtdWxhcmUiCgogICAgICAgICAgICBpbnRlcmdhdG9yID0gc29mdHdhcmVTeXN0ZW0gIkludGVyZ2F0b3IiICJTdWNobWFzY2hpbmUiCiAgICAgICAgICAgIGVsYXN0aWNzZWFyY2ggPSBzb2Z0d2FyZVN5c3RlbSAiRWxhc3RpY3NlYXJjaCIgIiIKCiAgICAgICAgICAgIGl3X2FsdCA9IHNvZnR3YXJlU3lzdGVtICJJbnZlc3RtZW50V2VsdCBBbHQiCiAgICAgICAgfQoKICAgICAgICBncm91cCAiU0QgRm9uZHMgJiBQcm9kdWt0ZSIgewogICAgICAgICAgICBhbHRlcnZvcnNvcmdlX3JlY2huZXIgPSBzb2Z0d2FyZVN5c3RlbSAiQWx0ZXJ2b3Jzb3JnZSBSZWNobmVyIiAiIgogICAgICAgICAgICBhbmxhZ2VfcmVjaG5lciA9IHNvZnR3YXJlU3lzdGVtICJBbmxhZ2VSZWNobmVyIiAiIgogICAgICAgICAgICBzeW5mb25pYyA9IHNvZnR3YXJlU3lzdGVtICJTeW5Gb25JQyIgIiIKICAgICAgICAgICAgY2VnZWthID0gc29mdHdhcmVTeXN0ZW0gIkNlZ2VrYSIgIkRpZ2l0YWxlIEVyZ2VibmlzYmVyaWNodGUiCiAgICAgICAgICAgIGZvbmRzX2RhdGVua2lvc2sgPSBzb2Z0d2FyZVN5c3RlbSAiRm9uZHMgRGF0ZW5raW9zayIgIiIKICAgICAgICAgICAgcG9pX2RiID0gc29mdHdhcmVTeXN0ZW0gIlBPSS1EQiIgIiIKICAgICAgICAgICAgZm9uZHNwcmVpc2xpc3RlID0gc29mdHdhcmVTeXN0ZW0gIkZvbmRzcHJlaXNsaXN0ZSIKICAgICAgICAgICAgZm9uZHBvcnRyYWl0ID0gc29mdHdhcmVTeXN0ZW0gIkZvbmRwb3J0YWl0IgogICAgICAgICAgICBmb25kc3ByZWlzbGlzdGVfYWx0ID0gc29mdHdhcmVTeXN0ZW0gIkZvbmRzcHJlaXNsaXN0ZSBBbHQiCiAgICAgICAgICAgIGZvbmRwb3J0cmFpdF9hbHQgPSBzb2Z0d2FyZVN5c3RlbSAiRm9uZHBvcnRhaXQgQWx0IgogICAgICAgIH0KCiAgICAgICAgZ3JvdXAgIlNEIFF1YWxpZml6aWVydW5nIHVuZCBEaWFsb2ciIHsKICAgICAgICAgICAgdG90YXJhID0gc29mdHdhcmVTeXN0ZW0gIlRvdGFyYSIgIkUtTGVhcm5pbmcgUGxhdGZvcm0iICJTRFQgUXVhbGkiCiAgICAgICAgfQoKICAgICAgICBncm91cCAiU0QgQmFzaXMgSVQiIHsKICAgICAgICAgICAgc2hlbGxfcG9ydGFscmFobWVuID0gc29mdHdhcmVTeXN0ZW0gIlNoZWxsIC8gUG9ydGFscmFobWVuIiAiIiAiU0RUIFBvcnRhc3RydWt0dXIiCiAgICAgICAgICAgIHNvbGlkX2Rlc2lnbl9zeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiU29saWQgRGVzaWduIFN5c3RlbSIgIiIgIlNEVCBTRFMiCgogICAgICAgICAgICB1c2VyY2VudHJpY3MgPSBzb2Z0d2FyZVN5c3RlbSAiVXNlcmNlbnRyaWNzIiAiIgogICAgICAgICAgICB3ZWJ0cmVrayA9IHNvZnR3YXJlU3lzdGVtICJXZWJ0cmVrayIgIk5ldWVyIE5hbWUgTWFwcCBJbnRlbGxpZ2VuY2UiCgogICAgICAgICAgICBhbGdvbGlhID0gc29mdHdhcmVTeXN0ZW0gIkFsZ29saWEiICJOZXVlIFN1Y2hlIiAiU0RUIFBvcnRhc3RydWt0dXIiCiAgICAgICAgfQoKICAgICAgICBncm91cCAiQW5kZXJlIiB7CiAgICAgICAgICAgIG1zZHluYW1pY3MgPSBzb2Z0d2FyZVN5c3RlbSAiTVMgRHluYW1pY3MiICIiICJBbmRlcmUiIHsKICAgICAgICAgICAgICAgIGNybV9pa19wayA9IGNvbnRhaW5lciAiQ3VzdG9tZXIgSW5zaWdodHMgSm91cm5leXMgKENSTSBJSy9QSykiICIiIAogICAgICAgICAgICB9CiAgICAgICAgICAgIHVhbSA9IHNvZnR3YXJlU3lzdGVtICJVQU0iICIiICJBbmRlcmUiCiAgICAgICAgICAgIGRlcG90cGxhdGZvcm0gPSBzb2Z0d2FyZVN5c3RlbSAiRGVwb3RwbGF0Zm9ybSIgIiIgIkFuZGVyZSIKICAgICAgICAgICAgZHZvID0gc29mdHdhcmVTeXN0ZW0gIkRWTyIgIiIgIkFuZGVyZSIKICAgICAgICAgICAgYXRvbCA9IHNvZnR3YXJlU3lzdGVtICJBVE9MIiAiIiAiQW5kZXJlIgogICAgICAgICAgICBsZWdhY3lfYXBwcyA9IHNvZnR3YXJlU3lzdGVtICJMZWdhY3kgQXBwcyIgIiIgIkFuZGVyZSIKICAgICAgICAgICAgZGVwb3R1cGxvYWQgPSBzb2Z0d2FyZVN5c3RlbSAiRGVwb3R1cGxvYWQiICIiICJBbmRlcmUiCiAgICAgICAgICAgIHVtcCA9IHNvZnR3YXJlU3lzdGVtICJVTVAiICIiICJBbmRlcmUiCiAgICAgICAgICAgIGxhZGV6b25lID0gc29mdHdhcmVTeXN0ZW0gIkxhZGV6b25lIiAiIiAiQW5kZXJlIgogICAgICAgIH0KCiAgICAgICAgZ3JvdXAgIlNEIFVzZXIiIHsKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiWmllbGdydXBwZW4gU3lzdGVtIiAiIiAiU0QgVXNlciIgewogICAgICAgICAgICAgICAgIWRvY3MgemllbGdydXBwZW4vZG9jcwoKICAgICAgICAgICAgICAgIHppZWxncnVwcGVuQXBpID0gY29udGFpbmVyICJaaWVsZ3J1cHBlbiBBUEkiICIiICJBenVyZSBBUElNIFBhY2thZ2UiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHppZWxncnVwcGVuQXBpIC0+IGNybV9pa19wayAibGllc3QiIAoKICAgICAgICAgICAgYXp1cmVfYWRiXzJfYyA9IHNvZnR3YXJlU3lzdGVtICJBenVyZSBBREIyQyIgIiIgIlNEIFVzZXIiCiAgICAgICAgICAgIGVudHJhX2lkID0gc29mdHdhcmVTeXN0ZW0gIkF6dXJlIEFEIC8gRW50cmEgSUQiICIiICJTRCBVc2VyIgoKICAgICAgICAgICAgbWl0YXJiZWl0ZXJ2ZXJ3YWx0dW5nID0gc29mdHdhcmVTeXN0ZW0gIk1pdGFyYmVpdGVydmVyd2FsdHVuZyIgIiIgIlNEIFVzZXIiIHsKICAgICAgICAgICAgICAgICFkb2NzIG12L2RvY3MKCiAgICAgICAgICAgICAgICBtdiA9IGNvbnRhaW5lciAiTVYiIHsKICAgICAgICAgICAgICAgICAgICBiYW5rQWRtaW4gLT4gdGhpcyAiYWRtaW5pc3RyaWVydCBOdXR6ZXIiCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgdW9hREIgPSBjb250YWluZXIgIlVPQSIgIlVPQSBEYXRhYmFzZSIgIlRTWS1PcmFjbGUiICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgICAgIG12IC0+IHRoaXMgIlJlYWRzIGZyb20gYW5kIHdyaXRlcyB0byIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICB1b2FTeW5jU2NoZW1hID0gY29udGFpbmVyICJTeW5jIFNjaGVtYSIgIkRlZGljYXRlZCBTY2hlbWEgZm9yIHN5bmNoaW5nIGRhdGEgdG8gYW5kIGZyb20gdGhlIE5WIERhdGFiYXNlIiAiVFNZLU9yYWNsZSIgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICAgICAgdW9hREIgLT4gdGhpcyAiV3JpdGVzIGRlbHRhIGluZm9ybWF0aW9uIHRvIHRoaXMgc2NoZW1hIHVzaW5nIHRyaWdnZXJzICIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBtdlN5bmMgPSBjb250YWluZXIgIk1WIFN5bmMgQWRhcHRlciIKCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIG51dHplcnZlcndhbHR1bmcgPSBzb2Z0d2FyZVN5c3RlbSAiTnV0emVydmVyd2FsdHVuZyIgIiIgIlNEIFVzZXIiIHsKICAgICAgICAgICAgICAgICFkb2NzIG52L2RvY3MKCiAgICAgICAgICAgICAgICBudkZyb250ZW5kID0gY29udGFpbmVyICJGcm9udGVuZCIgIiIgIlZ1ZSBTUEEiICJTRCBVc2VyIgogICAgICAgICAgICAgICAgbnZCYWNrZW5kID0gY29udGFpbmVyICJCYWNrZW5kIC8gQVBJIiAiIiAiVnVlIFNQQSIgIlNEIFVzZXIiIHsKICAgICAgICAgICAgICAgICAgICBudkRib3MgPSBjb21wb25lbnQgIk5WIERCT3MiICIiICJNYXZlbiBNb2R1bGUiCiAgICAgICAgICAgICAgICAgICAgbnZGcm9udGVuZCAtPiB0aGlzICJDb25zdW1lcyBBUEkiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBudkRiID0gY29udGFpbmVyICJEYXRhYmFzZSIgIiIgIlBvc3RncmVTUUwiICJEYXRhYmFzZSwgU0QgVXNlciIgewogICAgICAgICAgICAgICAgICAgIG52QmFja2VuZCAtPiB0aGlzICJSZWFkcyBmcm9tIGFuZCB3cml0ZXMgdG8iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIG12U3luYyAtPiB1b2FTeW5jU2NoZW1hICJyZWFkcyBNViBjaGFuZ2VzIiAiSlBBIgogICAgICAgICAgICBtdlN5bmMgLT4gbnZEYiAid3JpdGVzIE1WIGNoYW5nZXMgaW50byBOViBEQiIgIkpQQSIKICAgICAgICAgICAgbXZTeW5jIC0+IG52RGIgInJlYWRzIE5WIGNoYW5nZXMiICJFdmVudCBkcml2ZW4iCiAgICAgICAgICAgIG12U3luYyAtPiB1b2FTeW5jU2NoZW1hICJ3cml0ZXMgTlYgY2hhbmdlcyBpbnRvIFVPQSIKICAgICAgICAgICAgbXZTeW5jIC0+IG52RGJvcyAicmV1c2VzIGNvZGUiCiAgICAgICAgfQoKICAgICAgICAvLyBwZXJzb24gLT4gc3lzdGVtCiAgICAgICAgYmFua01pdGFyYmVpdGVyIC0+IGl3ICJudXR6dCIKICAgICAgICByZWRha3Rpb24gLT4gaXcgIm51dHp0IgogICAgICAgIHJlZGFrdGlvbiAtPiBtYWdub2xpYSAidmVyd2FsdGV0IHJlZGFrdGlvbmVsbGUgSW5oYWx0ZSIKICAgICAgICByZWRha3Rpb24gLT4gdG90YXJhICJ2ZXJ3YWx0ZXQgTGVybmluaGFsdGUiCiAgICAgICAgYmFua01pdGFyYmVpdGVyIC0+IG1hZ25vbGlhICJrb25zdW1pZXJ0IHJlZGFrdGlvbmVsbGUgSW5oYWx0ZSIKICAgICAgICBiYW5rTWl0YXJiZWl0ZXIgLT4gdG90YXJhICJudXR6dCBMZXJuYW5nZWJvdCIKCiAgICAgICAgLy8gc3lzdGVtIC0+IHN5c3RlbSBuZXUKICAgICAgICBpdyAtPiBtYWdub2xpYSAiaW50ZWdyaWVydCIKICAgICAgICBpdyAtPiBhbGdvbGlhICJpbnRlZ3JpZXJ0IgogICAgICAgIGl3IC0+IHRvdGFyYSAiaW50ZWdyaWVydCIKCiAgICAgICAgaXcgLT4gaXdfYWx0ICJ2ZXJsaW5rdCBhdWYiCgogICAgICAgIGl3IC0+IGF6dXJlX2FkYl8yX2MgIkF1dGhOIC8gQXV0aFogZHVyY2giCgogICAgICAgIG1hZ25vbGlhIC0+IGFsZ29saWEgInB1c2h0IHN1Y2hiYXJlIEluaGFsdGUiCiAgICAgICAgbWFnbm9saWEgLT4gY2VsdW0gImtvbnN1bWllcnQgQmlsZGVyIHVuZCBydWZ0IERva3VtZW50ZSBhYiIKCiAgICAgICAgdG90YXJhIC0+IGFsZ29saWEgInB1c2h0IHN1Y2hiYXJlIEluaGFsdGUiCgogICAgICAgIC8vIFppZWxncnVwcGVuIHJlbGV2YW50ZXMKICAgICAgICBtYWdub2xpYSAtPiB6aWVsZ3J1cHBlbkFwaSAicnVmdCBaaWVsZ3J1cHBlbiBhYiIgICAgICAgIAogICAgICAgIG1hZ25vbGlhIC0+IGVudHJhX2lkICJhdXRoIgogICAgICAgIHRvdGFyYSAtPiB6aWVsZ3J1cHBlbkFwaSAicnVmdCBaaWVsZ3J1cHBlbiBhYiIKICAgICAgICBtaXRhcmJlaXRlcnZlcndhbHR1bmcgLT4gbGFkZXpvbmUgInNwZWljaGVydCBaaWVsZ3J1cHBlbiBadXRhdGVuIgogICAgICAgIGxhZGV6b25lIC0+IGNybV9pa19wayAic3BlaWNoZXJ0IFppZWxncnVwcGVuIFp1dGF0ZW4iCiAgICAgICAgemllbGdydXBwZW5BZG1pbiAtPiBjcm1faWtfcGsgImRlZmluaWVydCBaaWVsZ3J1cHBlbiIKCiAgICAgICAgLy8gbGlmZXJheSBiYXNpZXJ0ZSBaaWVsZ3J1cHBlbgogICAgICAgIG1pdGFyYmVpdGVydmVyd2FsdHVuZyAtPiBsaWZlcmF5ICJzcGVpY2hlcnQgUmVjaHRlIGbDvHIgUm9sbGVuZ3J1cHBlbiBCaWxkdW5nIiAiIiAibGVnYWN5IgogICAgICAgIGF6dXJlX2FkYl8yX2MgLT4gbGlmZXJheSAicnVmdCBaaWVsZ3J1cHBlbiBmw7xyIGFrdHVlbGxlbiBVc2VyIGFiIiAiIiAibGVnYWN5IgogICAgICAgIG1hZ25vbGlhIC0+IGxpZmVyYXkgInJ1ZnQgYWxsZSB2b3JoYW5kZW5lbiBaaWVsZ3J1cHBlbiBhYiIgIiIgImxlZ2FjeSIKCiAgICAgICAgLy8gc3lzdGVtIC0+IHN5c3RlbSBhbHQKICAgICAgICBpd19hbHQgLT4gbGlmZXJheSAiemVpZ3QgRGF0ZW4iCiAgICAgICAgaXdfYWx0IC0+IGZpcnN0X3NwaXJpdCAiYmV6aWVodCBJbmhhbHQgYXVzIgoKCiAgICAgICAgLy8gUHJpdmF0a3VuZGVuIEF1ZnRyaXR0CiAgICAgICAgYjJjTnV0emVyIC0+IHVpcF9kZSAibnV0enQiCiAgICAgICAgdWlwX2RlIC0+IGludGVyZ2F0b3IgIm51dHp0IGbDvHIgZGllIFN1Y2hlIgogICAgICAgIHVpcF9kZSAtPiBmb25kcG9ydHJhaXRfYWx0ICJudXR6dCIKICAgICAgICB1aXBfZGUgLT4gZm9uZHNwcmVpc2xpc3RlX2FsdCAibnV0enQiCiAgICAgICAgZm9uZHNwcmVpc2xpc3RlX2FsdCAtPiBpbnRlcmdhdG9yICJiYXNpZXJ0IGF1ZiIKICAgICAgICB1aXBfZGUgLT4gbWFnbm9saWEgInplaWd0IEluaGFsdGUiCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUxhbmRzY2FwZSAiRGlhZ3JhbTEiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGV4Y2x1ZGUgZWxlbWVudC50YWc9PUFuZGVyZQogICAgICAgIH0KCgogICAgICAgIHN5c3RlbUxhbmRzY2FwZSAiV2ViYXVmdHJpdHRlIiB7CiAgICAgICAgICAgIGluY2x1ZGUgLT5lbGVtZW50LnRhZz09V2ViLUF1ZnRyaXR0LT4KICAgICAgICB9CgogICAgICAgIHN5c3RlbUNvbnRleHQgdWlwX2RlICJwcml2YXRrdW5kZW4iIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1Db250ZXh0IG1pdGFyYmVpdGVydmVyd2FsdHVuZyAibXYtc3lzdGVtLWNvbnRleHQiIHsKICAgICAgICAgICAgaW5jbHVkZSAtPm1pdGFyYmVpdGVydmVyd2FsdHVuZy0+CiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1Db250ZXh0IG51dHplcnZlcndhbHR1bmcgIm52LXN5c3RlbS1jb250ZXh0IiB7CiAgICAgICAgICAgIGluY2x1ZGUgLT5udXR6ZXJ2ZXJ3YWx0dW5nLT4gLT5taXRhcmJlaXRlcnZlcndhbHR1bmctPgogICAgICAgIH0KCiAgICAgICAgc3lzdGVtTGFuZHNjYXBlICJ6aWVsZ3J1cHBlbi1hcGktc3lzdGVtLWxhbmRzY2FwZSIgewogICAgICAgICAgICB0aXRsZSAiS29udGV4dGFiZ3Jlbnp1bmcgWmllbGdydXBwZW4gU3lzdGVtIgogICAgICAgICAgICBpbmNsdWRlIC0+emllbGdydXBwZW5TeXN0ZW0tPiBtaXRhcmJlaXRlcnZlcndhbHR1bmcgcmVkYWt0aW9uIGJhbmtNaXRhcmJlaXRlciB6aWVsZ3J1cHBlbkFkbWluIGJhbmtBZG1pbiBsYWRlem9uZQogICAgICAgIH0KCiAgICAgICAgc3lzdGVtQ29udGV4dCB6aWVsZ3J1cHBlblN5c3RlbSAiemllbGdydXBwZW4tc3lzdGVtLWNvbnRleHQiIHsKICAgICAgICAgICAgdGl0bGUgIlppZWxncnVwcGVuIFN5c3RlbSBLb250ZXh0IgogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIHN5c3RlbUNvbnRleHQgbWFnbm9saWEgInppZWxncnVwcGVuLXN5c3RlbS1jb250ZXh0LWtvbnN1bWVudGVuIiB7CiAgICAgICAgICAgIHRpdGxlICJaaWVsZ3J1cHBlbiBTeXN0ZW0gS29udGV4dCAoS29uc3VtZW50ZW4pIgogICAgICAgICAgICBpbmNsdWRlIG1hZ25vbGlhIHppZWxncnVwcGVuU3lzdGVtIHRvdGFyYSByZWRha3Rpb24gYmFua01pdGFyYmVpdGVyCiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1Db250ZXh0IG1zZHluYW1pY3MgInppZWxncnVwcGVuLXN5c3RlbS1jb250ZXh0LW1zZHluYW1pY3MiIHsKICAgICAgICAgICAgdGl0bGUgIlppZWxncnVwcGVuIFN5c3RlbSBLb250ZXh0IChNUyBEeW5hbWljcykiCiAgICAgICAgICAgIGluY2x1ZGUgKiBtaXRhcmJlaXRlcnZlcndhbHR1bmcKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciB6aWVsZ3J1cHBlblN5c3RlbSAiemllbGdydXBwZW4tc3lzdGVtLWNvbnRhaW5lciIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBudXR6ZXJ2ZXJ3YWx0dW5nICJudi1jb250YWluZXIiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgbWl0YXJiZWl0ZXJ2ZXJ3YWx0dW5nICJtdi1jb250YWluZXIiIHsKICAgICAgICAgICAgaW5jbHVkZSBlbGVtZW50LnBhcmVudD09bnV0emVydmVyd2FsdHVuZyBlbGVtZW50LnBhcmVudD09bWl0YXJiZWl0ZXJ2ZXJ3YWx0dW5nCiAgICAgICAgfQoKCiAgICAgICAgZHluYW1pYyAqICJ6aWVsZ3J1cHBlbi1hcGktZ2V0LXRhcmdldC1ncm91cHMtZm9yLXVzZXIiICJaaWVsZ3J1cHBlbiBiYXNpZXJ0ZSBDb250ZW50YXVzc3BpZWx1bmciIHsKICAgICAgICAgICAgdGl0bGUgIlppZWxncnVwcGVuIGJhc2llcnRlIENvbnRlbnRhdXNzcGllbHVuZyIKICAgICAgICAgICAgbWFnbm9saWEgLT4gemllbGdydXBwZW5TeXN0ZW0gInJ1ZnQgWmllbGdydXBwZW4gbWl0IFRva2VuIGRlcyBOdXR6ZXJzIGFiIgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBtc2R5bmFtaWNzICJMb2dpbiAodGVjaG5pc2NoZXIgVXNlcikiCiAgICAgICAgICAgIHppZWxncnVwcGVuU3lzdGVtIC0+IG1zZHluYW1pY3MgInJ1ZnQgWmllbGdydXBwZW4gZsO8ciBVVUtFWSBhYiAiCiAgICAgICAgICAgIG1zZHluYW1pY3MgLT4gemllbGdydXBwZW5TeXN0ZW0gImxpZWZlcnQgWmllbGdydXBwZW4gZsO8ciBVVUtFWSIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gbWFnbm9saWEgImxpZWZlcnQgWmllbGdydXBwZW4gZsO8ciBVc2VyIgogICAgICAgIH0KCgogICAgICAgIGR5bmFtaWMgKiAiemllbGdydXBwZW4tYXBpLW1hZ25vbGlhLWNvbnRlbnQtYXVzc3BpZWx1bmciICJaaWVsZ3J1cHBlbiBiYXNpZXJ0ZSBDb250ZW50YXVzc3BpZWx1bmciIHsKICAgICAgICAgICAgdGl0bGUgIlppZWxncnVwcGVuIGJhc2llcnRlIENvbnRlbnRhdXNzcGllbHVuZyIKICAgICAgICAgICAgYmFua01pdGFyYmVpdGVyIC0+IGl3ICJydWZ0IGF1ZiIKICAgICAgICAgICAgaXcgLT4gYXp1cmVfYWRiXzJfYyAicmVkaXJlY3QgZsO8ciBMb2dpbiIKICAgICAgICAgICAgYXp1cmVfYWRiXzJfYyAtPiBpdyAiZXJ6ZXVndCBMb2dpbnRva2VuIgogICAgICAgICAgICBpdyAtPiBtYWdub2xpYSAibGVpdGV0IHdlaXRlciIKICAgICAgICAgICAgbWFnbm9saWEgLT4gemllbGdydXBwZW5TeXN0ZW0gInJ1ZnQgWmllbGdydXBwZW4gbWl0IExvZ2ludG9rZW4gYWIiCiAgICAgICAgICAgIHppZWxncnVwcGVuU3lzdGVtIC0+IG1zZHluYW1pY3MgImxvZ2luIHRlY2huaXNjaGVyIHVzZXIiCiAgICAgICAgICAgIHppZWxncnVwcGVuU3lzdGVtIC0+IG1zZHluYW1pY3MgInJ1ZnQgWmllbGdydXBwZW4gZsO8ciB1dWtleSBhYiIKICAgICAgICAgICAgbXNkeW5hbWljcyAtPiB6aWVsZ3J1cHBlblN5c3RlbSAibGllZmVydCBaaWVsZ3J1cHBlbiBmw7xyIHV1a2V5IgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBtYWdub2xpYSAibGllZmVydCBaaWVsZ3J1cHBlbiBmw7xyIHVzZXIiCiAgICAgICAgICAgIG1hZ25vbGlhIC0+IGJhbmtNaXRhcmJlaXRlciAiQ29udGVudCBBdXNzcGllbHVuZyBhdWYgQmFzaXMgWmllbGdydXBwZW56dWdlaMO2cmlna2VpdCIKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgKiAiemllbGdydXBwZW4tYXBpLW1hZ25vbGlhLXJlZGFrdGlvbiIgIk1hZ25vbGlhIFJlZGFrdGlvbiIgewogICAgICAgICAgICByZWRha3Rpb24gLT4gbWFnbm9saWEgInZlcndhbHRldCBJbmhhbHQiCiAgICAgICAgICAgIG1hZ25vbGlhIC0+IGVudHJhX2lkICJyZWRpcmVjdCBmw7xyIExvZ2luIgogICAgICAgICAgICBlbnRyYV9pZCAtPiBtYWdub2xpYSAiZXJ6ZXVndCBMb2dpbnRva2VuIgogICAgICAgICAgICBtYWdub2xpYSAtPiB6aWVsZ3J1cHBlblN5c3RlbSAicnVmdCBhbGxlIHZlcmbDvGdiYXJlbiBaaWVsZ3J1cHBlbiBhYiIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gbXNkeW5hbWljcyAibG9naW4gdGVjaG5pc2NoZXIgdXNlciIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gbXNkeW5hbWljcyAicnVmdCBhbGxlIHZlcmbDvGdiYXJlbiBaaWVsZ3J1cHBlbiBhYiIKICAgICAgICAgICAgbXNkeW5hbWljcyAtPiB6aWVsZ3J1cHBlblN5c3RlbSAibGllZmVydCBhbGxlIFppZWxncnVwcGVuIgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBtYWdub2xpYSAibGllZmVydCBhbGxlIFppZWxncnVwcGVuIgogICAgICAgICAgICBtYWdub2xpYSAtPiByZWRha3Rpb24gImVybcO2Z2xpY2h0IEF1c3dhaGwgZGVyIFppZWxncnVwcGVuIGbDvHIgSW5oYWx0IgogICAgICAgIH0KCgogICAgICAgIGR5bmFtaWMgKiAiemllbGdydXBwZW4tYXBpLXRvdGFyYS1hdXNzcGllbHVuZyIgIlppZWxncnVwcGVuIGJhc2llcnRlIENvbnRlbnRhdXNzcGllbHVuZyIgewogICAgICAgICAgICBiYW5rTWl0YXJiZWl0ZXIgLT4gaXcgInJ1ZnQgYXVmIgogICAgICAgICAgICBpdyAtPiBhenVyZV9hZGJfMl9jICJyZWRpcmVjdCBmw7xyIExvZ2luIgogICAgICAgICAgICBhenVyZV9hZGJfMl9jIC0+IGl3ICJlcnpldWd0IExvZ2ludG9rZW4iCiAgICAgICAgICAgIGl3IC0+IHRvdGFyYSAibGVpdGV0IHdlaXRlciIKICAgICAgICAgICAgdG90YXJhIC0+IHppZWxncnVwcGVuU3lzdGVtICJydWZ0IFppZWxncnVwcGVuIG1pdCBMb2dpbnRva2VuIGFiIgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBtc2R5bmFtaWNzICJydWZ0IFppZWxncnVwcGVuIGbDvHIgdXVrZXkgYWIiCiAgICAgICAgICAgIG1zZHluYW1pY3MgLT4gemllbGdydXBwZW5TeXN0ZW0gImxpZWZlcnQgWmllbGdydXBwZW4gZsO8ciB1dWtleSIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gdG90YXJhICJsaWVmZXJ0IFppZWxncnVwcGVuIGbDvHIgdXNlciIKICAgICAgICAgICAgdG90YXJhIC0+IGJhbmtNaXRhcmJlaXRlciAiRS1MZWFybmluZ3MgQXVzc3BpZWx1bmcgYXVmIEJhc2lzIFppZWxncnVwcGVuenVnZWjDtnJpZ2tlaXQiCiAgICAgICAgfQoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50IFBlcnNvbiB7CiAgICAgICAgICAgICAgICBzaGFwZSBwZXJzb24KICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzEzMmM2NAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50IERhdGFiYXNlIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgUG9ydGFsIHsKICAgICAgICAgICAgICAgIHNoYXBlIFdlYmJyb3dzZXIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBSb3VuZGVkQm94CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgQ29udGFpbmVyIHsKICAgICAgICAgICAgICAgIHNoYXBlIFJvdW5kZWRCb3gKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCBDb21wb25lbnQgewogICAgICAgICAgICAgICAgc2hhcGUgUm91bmRlZEJveAogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJTRCBVc2VyIiB7CiAgICAgICAgICAgICAgICBpY29uICIuL2ljb25zL1NEVF9Vc2VyLnBuZyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU0RUIENvZGUgZCdBenVyZSIgewogICAgICAgICAgICAgICAgaWNvbiAiLi9pY29ucy9TRFRfQ29kZURBenVyZS5wbmciCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlNEVCBBc3NldCBGb3JjZSIgewogICAgICAgICAgICAgICAgaWNvbiAiLi9pY29ucy9TRFRfQXNzZXRGb3JjZS5wbmciCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlNEVCAzNDIiIHsKICAgICAgICAgICAgICAgIGljb24gIi4vaWNvbnMvU0RUXzM0Mi5wbmciCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlNEVCBQb3J0YXN0cnVrdHVyIiB7CiAgICAgICAgICAgICAgICBpY29uICIuL2ljb25zL1NEVF9Qb3J0YXN0cnVrdHVyLnBuZyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU0RUIFNEUyIgewogICAgICAgICAgICAgICAgaWNvbiAiLi9pY29ucy9TRFRfU0RTLnBuZyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU0RUIFF1YWxpIiB7CiAgICAgICAgICAgICAgICBpY29uICIuL2ljb25zL1NEVF9RdWFsaWZpemllcnVuZy5wbmciCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIGJyYW5kaW5nIHsKICAgICAgICAgICAgbG9nbyAiLi9pY29ucy91aS5wbmciCiAgICAgICAgfQogICAgfQogICAgCgp9Cg=="
+    "structurizr.dsl" : "d29ya3NwYWNlICJEb23DpG5lIFdlYi1Qb3J0YWxlIiB7CgogICAgIWRvY3MgZG9jcwoKICAgIG1vZGVsIHsKICAgICAgICAvLyBOdXR6ZXIKICAgICAgICBiYW5rTWl0YXJiZWl0ZXIgPSBwZXJzb24gIkJhbmttaXRhcmJlaXRlciIKICAgICAgICByZWRha3Rpb24gPSBwZXJzb24gIlJlZGFrdGlvbiIKICAgICAgICBiMmNOdXR6ZXIgPSBwZXJzb24gIkIyQyBOdXR6ZXIiCgogICAgICAgIHppZWxncnVwcGVuQWRtaW4gPSBwZXJzb24gIlppZWxncnVwcGVuIEFkbWluIgogICAgICAgIGJhbmtBZG1pbiA9IHBlcnNvbiAiQmFuayBBZG1pbiIKCiAgICAgICAgLy8gUG9ydGFsZQogICAgICAgIGl3ID0gc29mdHdhcmVTeXN0ZW0gIkludmVzdG1lbnRXZWx0IE5ldSIgIiIgIlBvcnRhbCIKICAgICAgICBpa19vbmxpbmUgPSBzb2Z0d2FyZVN5c3RlbSAiSUsgT25saW5lIiAiIiAiUG9ydGFsIgogICAgICAgIHZlcnRyaWVic0NvY2twaXQgPSBzb2Z0d2FyZVN5c3RlbSAiVmVydHJpZWJzIENvY2twaXQiICIiICJQb3J0YWwiCgogICAgICAgIC8vIFdlYnNlaXRlbgogICAgICAgIHVpcF9kZSA9IHNvZnR3YXJlU3lzdGVtICJ3d3cudW5pb24taW52ZXN0bWVudC5kZSIgInd3dy51bmlvbi1pbnZlc3RtZW50LmRlIiAiV2ViLUF1ZnRyaXR0LFVJUCIgewogICAgICAgICAgICB1cmwgaHR0cHM6Ly93d3cudW5pb24taW52ZXN0bWVudC5kZQogICAgICAgIH0KICAgICAgICB1aXBfYXQgPSBzb2Z0d2FyZVN5c3RlbSAid3d3LnVuaW9uLWludmVzdG1lbnQuYXQiICIiICJXZWItQXVmdHJpdHQsVUlQIgogICAgICAgIHVpcl9pbnRsID0gc29mdHdhcmVTeXN0ZW0gInJlYWxlc3RhdGUudW5pb24taW52ZXN0bWVudC5jb20iICIiICJXZWItQXVmdHJpdHQsVUlSIgogICAgICAgIHVtaCA9IHNvZnR3YXJlU3lzdGVtICJ1bnRlcm5laG1lbi51bmlvbi1pbnZlc3RtZW50LmRlIiAiIiAiV2ViLUF1ZnRyaXR0LFVNSCIKICAgICAgICBhdHRyYXggPSBzb2Z0d2FyZVN5c3RlbSAid3d3LmF0dHJheC5sdSIgIiIgIldlYi1BdWZ0cml0dCxBdHRyYXgiCgogICAgICAgIC8vIAoKICAgICAgICBncm91cCAiU0QgSW5mb21hbmFnZW1lbnQiIHsKICAgICAgICAgICAgbWFnbm9saWEgPSBzb2Z0d2FyZVN5c3RlbSAiTWFnbm9saWEiICJDb250ZW50IE1hbmFnZW1lbnQgU3lzdGVtIiAiU0QgSW5mb21hbmFnZW1lbnQsIFNEVCAzNDIsIFNEVCBDb2RlIGQnQXp1cmUiCiAgICAgICAgICAgIGZpcnN0X3NwaXJpdCA9IHNvZnR3YXJlU3lzdGVtICJGaXJzdFNwaXJpdCIgIkFsdGVzIENvbnRlbnQgTWFuYWdlbWVudCBTeXN0ZW0iICJTRCBJbmZvbWFuYWdlbWVudCwgU0RUIEFzc2V0IEZvcmNlIgogICAgICAgICAgICBsaWZlcmF5ID0gc29mdHdhcmVTeXN0ZW0gIkxpZmVyYXkiICJQb3J0YWwgU2VydmVyIiAiU0QgSW5mb21hbmFnZW1lbnQsIFNEVCBBc3NldCBGb3JjZSIKCiAgICAgICAgICAgIGNlbHVtID0gc29mdHdhcmVTeXN0ZW0gIkNlbHVtIiAiRGlnaXRhbCBBc3NldCBNYW5hZ2VtZW50IiAiU0QgSW5mb21hbmFnZW1lbnQsIFNEVCBBc3NldCBGb3JjZSIKICAgICAgICAgICAgbW92aW5nX2ltYWdlID0gc29mdHdhcmVTeXN0ZW0gIk1vdmluZ0ltYWdlIiAiU2FhUyBWaWRlbyBTdHJlYW1pbmcgRGllbnN0IiAiU0QgSW5mb21hbmFnZW1lbnQiCiAgICAgICAgICAgIHVuaV90dWJlID0gc29mdHdhcmVTeXN0ZW0gIlVuaVR1YmUiICJDb3Jwb3JhdGVUdWJlIFByb2R1a3Qgdm9uIE1vdmluZ0ltYWdlIiAiU0QgSW5mb21hbmFnZW1lbnQiCiAgICAgICAgICAgIGRvY19tZSA9IHNvZnR3YXJlU3lzdGVtICJEb2NNZSIgIiIKCiAgICAgICAgICAgIHVuaXZlcnNhbF9tZXNzZW5nZXIgPSBzb2Z0d2FyZVN5c3RlbSAiVW5pdmVyc2FsIE1lc3NlbmdlciIgIiIKICAgICAgICAgICAgd2ViZm9ybXMgPSBzb2Z0d2FyZVN5c3RlbSAid2ViZm9ybXMiICJEaWdpdGFsZSBGb3JtdWxhcmUiCgogICAgICAgICAgICBpbnRlcmdhdG9yID0gc29mdHdhcmVTeXN0ZW0gIkludGVyZ2F0b3IiICJTdWNobWFzY2hpbmUiCiAgICAgICAgICAgIGVsYXN0aWNzZWFyY2ggPSBzb2Z0d2FyZVN5c3RlbSAiRWxhc3RpY3NlYXJjaCIgIiIKCiAgICAgICAgICAgIGl3X2FsdCA9IHNvZnR3YXJlU3lzdGVtICJJbnZlc3RtZW50V2VsdCBBbHQiCiAgICAgICAgfQoKICAgICAgICBncm91cCAiU0QgRm9uZHMgJiBQcm9kdWt0ZSIgewogICAgICAgICAgICBhbHRlcnZvcnNvcmdlX3JlY2huZXIgPSBzb2Z0d2FyZVN5c3RlbSAiQWx0ZXJ2b3Jzb3JnZSBSZWNobmVyIiAiIgogICAgICAgICAgICBhbmxhZ2VfcmVjaG5lciA9IHNvZnR3YXJlU3lzdGVtICJBbmxhZ2VSZWNobmVyIiAiIgogICAgICAgICAgICBzeW5mb25pYyA9IHNvZnR3YXJlU3lzdGVtICJTeW5Gb25JQyIgIiIKICAgICAgICAgICAgY2VnZWthID0gc29mdHdhcmVTeXN0ZW0gIkNlZ2VrYSIgIkRpZ2l0YWxlIEVyZ2VibmlzYmVyaWNodGUiCiAgICAgICAgICAgIGZvbmRzX2RhdGVua2lvc2sgPSBzb2Z0d2FyZVN5c3RlbSAiRm9uZHMgRGF0ZW5raW9zayIgIiIKICAgICAgICAgICAgcG9pX2RiID0gc29mdHdhcmVTeXN0ZW0gIlBPSS1EQiIgIiIKICAgICAgICAgICAgZm9uZHNwcmVpc2xpc3RlID0gc29mdHdhcmVTeXN0ZW0gIkZvbmRzcHJlaXNsaXN0ZSIKICAgICAgICAgICAgZm9uZHBvcnRyYWl0ID0gc29mdHdhcmVTeXN0ZW0gIkZvbmRwb3J0YWl0IgogICAgICAgICAgICBmb25kc3ByZWlzbGlzdGVfYWx0ID0gc29mdHdhcmVTeXN0ZW0gIkZvbmRzcHJlaXNsaXN0ZSBBbHQiCiAgICAgICAgICAgIGZvbmRwb3J0cmFpdF9hbHQgPSBzb2Z0d2FyZVN5c3RlbSAiRm9uZHBvcnRhaXQgQWx0IgogICAgICAgIH0KCiAgICAgICAgZ3JvdXAgIlNEIFF1YWxpZml6aWVydW5nIHVuZCBEaWFsb2ciIHsKICAgICAgICAgICAgdG90YXJhID0gc29mdHdhcmVTeXN0ZW0gIlRvdGFyYSIgIkUtTGVhcm5pbmcgUGxhdGZvcm0iICJTRFQgUXVhbGkiCiAgICAgICAgfQoKICAgICAgICBncm91cCAiU0QgQmFzaXMgSVQiIHsKICAgICAgICAgICAgc2hlbGxfcG9ydGFscmFobWVuID0gc29mdHdhcmVTeXN0ZW0gIlNoZWxsIC8gUG9ydGFscmFobWVuIiAiIiAiU0RUIFBvcnRhc3RydWt0dXIiCiAgICAgICAgICAgIHNvbGlkX2Rlc2lnbl9zeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiU29saWQgRGVzaWduIFN5c3RlbSIgIiIgIlNEVCBTRFMiCgogICAgICAgICAgICB1c2VyY2VudHJpY3MgPSBzb2Z0d2FyZVN5c3RlbSAiVXNlcmNlbnRyaWNzIiAiIgogICAgICAgICAgICB3ZWJ0cmVrayA9IHNvZnR3YXJlU3lzdGVtICJXZWJ0cmVrayIgIk5ldWVyIE5hbWUgTWFwcCBJbnRlbGxpZ2VuY2UiCgogICAgICAgICAgICBhbGdvbGlhID0gc29mdHdhcmVTeXN0ZW0gIkFsZ29saWEiICJOZXVlIFN1Y2hlIiAiU0RUIFBvcnRhc3RydWt0dXIiCiAgICAgICAgfQoKICAgICAgICBncm91cCAiQW5kZXJlIiB7CiAgICAgICAgICAgIG1zZHluYW1pY3MgPSBzb2Z0d2FyZVN5c3RlbSAiTVMgRHluYW1pY3MiICIiICJBbmRlcmUiIHsKICAgICAgICAgICAgICAgIGNybV9pa19wayA9IGNvbnRhaW5lciAiQ3VzdG9tZXIgSW5zaWdodHMgSm91cm5leXMgKENSTSBJSy9QSykiICIiIAogICAgICAgICAgICB9CiAgICAgICAgICAgIHVhbSA9IHNvZnR3YXJlU3lzdGVtICJVQU0iICIiICJBbmRlcmUiCiAgICAgICAgICAgIGRlcG90cGxhdGZvcm0gPSBzb2Z0d2FyZVN5c3RlbSAiRGVwb3RwbGF0Zm9ybSIgIiIgIkFuZGVyZSIKICAgICAgICAgICAgZHZvID0gc29mdHdhcmVTeXN0ZW0gIkRWTyIgIiIgIkFuZGVyZSIKICAgICAgICAgICAgYXRvbCA9IHNvZnR3YXJlU3lzdGVtICJBVE9MIiAiIiAiQW5kZXJlIgogICAgICAgICAgICBsZWdhY3lfYXBwcyA9IHNvZnR3YXJlU3lzdGVtICJMZWdhY3kgQXBwcyIgIiIgIkFuZGVyZSIKICAgICAgICAgICAgZGVwb3R1cGxvYWQgPSBzb2Z0d2FyZVN5c3RlbSAiRGVwb3R1cGxvYWQiICIiICJBbmRlcmUiCiAgICAgICAgICAgIHVtcCA9IHNvZnR3YXJlU3lzdGVtICJVTVAiICIiICJBbmRlcmUiCiAgICAgICAgICAgIGxhZGV6b25lID0gc29mdHdhcmVTeXN0ZW0gIkxhZGV6b25lIiAiIiAiQW5kZXJlIgogICAgICAgIH0KCiAgICAgICAgZ3JvdXAgIlNEIFVzZXIiIHsKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiWmllbGdydXBwZW4gU3lzdGVtIiAiIiAiU0QgVXNlciIgewogICAgICAgICAgICAgICAgIWRvY3MgemllbGdydXBwZW4vZG9jcwoKICAgICAgICAgICAgICAgIHppZWxncnVwcGVuQXBpID0gY29udGFpbmVyICJaaWVsZ3J1cHBlbiBBUEkiICIiICJBenVyZSBBUElNIFBhY2thZ2UiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHppZWxncnVwcGVuQXBpIC0+IGNybV9pa19wayAibGllc3QiIAoKICAgICAgICAgICAgYXp1cmVfYWRiXzJfYyA9IHNvZnR3YXJlU3lzdGVtICJBenVyZSBBREIyQyIgIiIgIlNEIFVzZXIiCiAgICAgICAgICAgIGVudHJhX2lkID0gc29mdHdhcmVTeXN0ZW0gIkF6dXJlIEFEIC8gRW50cmEgSUQiICIiICJTRCBVc2VyIgoKICAgICAgICAgICAgbWl0YXJiZWl0ZXJ2ZXJ3YWx0dW5nID0gc29mdHdhcmVTeXN0ZW0gIk1pdGFyYmVpdGVydmVyd2FsdHVuZyIgIiIgIlNEIFVzZXIiIHsKICAgICAgICAgICAgICAgICFkb2NzIG12L2RvY3MKCiAgICAgICAgICAgICAgICBtdiA9IGNvbnRhaW5lciAiTVYiIHsKICAgICAgICAgICAgICAgICAgICBiYW5rQWRtaW4gLT4gdGhpcyAiYWRtaW5pc3RyaWVydCBOdXR6ZXIiCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgdW9hREIgPSBjb250YWluZXIgIlVPQSIgIlVPQSBEYXRhYmFzZSIgIlRTWS1PcmFjbGUiICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgICAgIG12IC0+IHRoaXMgIlJlYWRzIGZyb20gYW5kIHdyaXRlcyB0byIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICB1b2FTeW5jU2NoZW1hID0gY29udGFpbmVyICJTeW5jIFNjaGVtYSIgIkRlZGljYXRlZCBTY2hlbWEgZm9yIHN5bmNoaW5nIGRhdGEgdG8gYW5kIGZyb20gdGhlIE5WIERhdGFiYXNlIiAiVFNZLU9yYWNsZSIgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICAgICAgdW9hREIgLT4gdGhpcyAiV3JpdGVzIGRlbHRhIGluZm9ybWF0aW9uIHRvIHRoaXMgc2NoZW1hIHVzaW5nIHRyaWdnZXJzICIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBtdlN5bmMgPSBjb250YWluZXIgIk1WIFN5bmMgQWRhcHRlciIKCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIG51dHplcnZlcndhbHR1bmcgPSBzb2Z0d2FyZVN5c3RlbSAiTnV0emVydmVyd2FsdHVuZyIgIiIgIlNEIFVzZXIiIHsKICAgICAgICAgICAgICAgICFkb2NzIG52L2RvY3MKCiAgICAgICAgICAgICAgICBudkZyb250ZW5kID0gY29udGFpbmVyICJOViBGcm9udGVuZCIgIiIgIlZ1ZSBTUEEiICJTRCBVc2VyIgogICAgICAgICAgICAgICAgbnZCYWNrZW5kID0gY29udGFpbmVyICJOViBCYWNrZW5kIiAiIiAiVnVlIFNQQSIgIlNEIFVzZXIiIHsKICAgICAgICAgICAgICAgICAgICBudkJhY2tlbmRBcGkgPSBjb21wb25lbnQgIk5WIEJhY2tlbmQgQVBJIiAiIiAiSmF2YSBRdWFya3VzIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIG52RnJvbnRlbmQgLT4gdGhpcyAiQ29uc3VtZXMgQVBJIiAgICAKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgbnZCYWNrZW5kU3luYyA9IGNvbXBvbmVudCAiTVYvTlYgU3luYyBBcHBsaWNhdGlvbiIgIiIgIkphdmEgUXVhcmt1cyIKICAgICAgICAgICAgICAgICAgICBzaGFyZWQgPSBjb21wb25lbnQgIlNoYXJlZCBDb2RlIiAiIiAiSmF2YSIKICAgICAgICAgICAgICAgICAgICBudkJhY2tlbmRBcGkgLT4gc2hhcmVkICJ1c2VzIgogICAgICAgICAgICAgICAgICAgIG52QmFja2VuZFN5bmMgLT4gc2hhcmVkICJ1c2VzIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgbnZEYiA9IGNvbnRhaW5lciAiRGF0YWJhc2UiICIiICJQb3N0Z3JlU1FMIiAiRGF0YWJhc2UsIFNEIFVzZXIiIHsKICAgICAgICAgICAgICAgICAgICBudkJhY2tlbmRBcGkgLT4gdGhpcyAiUmVhZHMgZnJvbSBhbmQgd3JpdGVzIHRvIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBudkJhY2tlbmRTeW5jIC0+IG52RGIgIndyaXRlcyBNViBjaGFuZ2VzIGludG8gTlYgREIiICJKUEEiCiAgICAgICAgICAgIG52QmFja2VuZFN5bmMgLT4gdW9hU3luY1NjaGVtYSAicmVhZHMgTVYgY2hhbmdlcyIgIkpQQSIKICAgICAgICAgICAgCiAgICAgICAgICAgIG12U3luYyAtPiB1b2FTeW5jU2NoZW1hICJyZWFkcyBNViBjaGFuZ2VzIiAiSlBBIgogICAgICAgICAgICBtdlN5bmMgLT4gdW9hU3luY1NjaGVtYSAid3JpdGVzIE5WIGNoYW5nZXMgaW50byBVT0EiCiAgICAgICAgfQoKICAgICAgICAvLyBwZXJzb24gLT4gc3lzdGVtCiAgICAgICAgYmFua01pdGFyYmVpdGVyIC0+IGl3ICJudXR6dCIKICAgICAgICByZWRha3Rpb24gLT4gaXcgIm51dHp0IgogICAgICAgIHJlZGFrdGlvbiAtPiBtYWdub2xpYSAidmVyd2FsdGV0IHJlZGFrdGlvbmVsbGUgSW5oYWx0ZSIKICAgICAgICByZWRha3Rpb24gLT4gdG90YXJhICJ2ZXJ3YWx0ZXQgTGVybmluaGFsdGUiCiAgICAgICAgYmFua01pdGFyYmVpdGVyIC0+IG1hZ25vbGlhICJrb25zdW1pZXJ0IHJlZGFrdGlvbmVsbGUgSW5oYWx0ZSIKICAgICAgICBiYW5rTWl0YXJiZWl0ZXIgLT4gdG90YXJhICJudXR6dCBMZXJuYW5nZWJvdCIKCiAgICAgICAgLy8gc3lzdGVtIC0+IHN5c3RlbSBuZXUKICAgICAgICBpdyAtPiBtYWdub2xpYSAiaW50ZWdyaWVydCIKICAgICAgICBpdyAtPiBhbGdvbGlhICJpbnRlZ3JpZXJ0IgogICAgICAgIGl3IC0+IHRvdGFyYSAiaW50ZWdyaWVydCIKCiAgICAgICAgaXcgLT4gaXdfYWx0ICJ2ZXJsaW5rdCBhdWYiCgogICAgICAgIGl3IC0+IGF6dXJlX2FkYl8yX2MgIkF1dGhOIC8gQXV0aFogZHVyY2giCgogICAgICAgIG1hZ25vbGlhIC0+IGFsZ29saWEgInB1c2h0IHN1Y2hiYXJlIEluaGFsdGUiCiAgICAgICAgbWFnbm9saWEgLT4gY2VsdW0gImtvbnN1bWllcnQgQmlsZGVyIHVuZCBydWZ0IERva3VtZW50ZSBhYiIKCiAgICAgICAgdG90YXJhIC0+IGFsZ29saWEgInB1c2h0IHN1Y2hiYXJlIEluaGFsdGUiCgogICAgICAgIC8vIENSTSBiYXNpZXJ0ZSBaaWVsZ3J1cHBlbgogICAgICAgIG1hZ25vbGlhIC0+IHppZWxncnVwcGVuQXBpICJydWZ0IFppZWxncnVwcGVuIGFiIiAgICAgICAgCiAgICAgICAgbWFnbm9saWEgLT4gZW50cmFfaWQgImF1dGgiCiAgICAgICAgdG90YXJhIC0+IHppZWxncnVwcGVuQXBpICJydWZ0IFppZWxncnVwcGVuIGFiIgogICAgICAgIG1pdGFyYmVpdGVydmVyd2FsdHVuZyAtPiBsYWRlem9uZSAic3BlaWNoZXJ0IFppZWxncnVwcGVuIFp1dGF0ZW4iCiAgICAgICAgbGFkZXpvbmUgLT4gY3JtX2lrX3BrICJzcGVpY2hlcnQgWmllbGdydXBwZW4gWnV0YXRlbiIKICAgICAgICB6aWVsZ3J1cHBlbkFkbWluIC0+IGNybV9pa19wayAibWFudWVsbGVyIERhdGVuYWJ6dWciICIiICJsZWdhY3kiCiAgICAgICAgemllbGdydXBwZW5BZG1pbiAtPiBjcm1faWtfcGsgImRlZmluaWVydCBaaWVsZ3J1cHBlbiIKICAgICAgICBhenVyZV9hZGJfMl9jIC0+IHppZWxncnVwcGVuQXBpICJydWZ0IFppZWxncnVwcGVuIGFiIgoKICAgICAgICAvLyBMaWZlcmF5IGJhc2llcnRlIFppZWxncnVwcGVuCiAgICAgICAgYmFua01pdGFyYmVpdGVyIC0+IGF6dXJlX2FkYl8yX2MgImxvZ2luIgogICAgICAgIG1pdGFyYmVpdGVydmVyd2FsdHVuZyAtPiBsaWZlcmF5ICJzcGVpY2hlcnQgUmVjaHRlIGbDvHIgUm9sbGVuZ3J1cHBlbiBCaWxkdW5nIiAiIiAibGVnYWN5IgogICAgICAgIGF6dXJlX2FkYl8yX2MgLT4gbGlmZXJheSAicnVmdCBaaWVsZ3J1cHBlbiBmw7xyIGFrdHVlbGxlbiBVc2VyIGFiIiAiIiAibGVnYWN5IgogICAgICAgIG1hZ25vbGlhIC0+IGxpZmVyYXkgInJ1ZnQgWmllbGdydXBwZW4gYWIiICIiICJsZWdhY3kiCiAgICAgICAgemllbGdydXBwZW5BZG1pbiAtPiBsaWZlcmF5ICJkZWZpbmllcnQgWmllbGdydXBwZW4iICIiICJsZWdhY3kiCgogICAgICAgIC8vIHN5c3RlbSAtPiBzeXN0ZW0gYWx0CiAgICAgICAgaXdfYWx0IC0+IGxpZmVyYXkgInplaWd0IERhdGVuIgogICAgICAgIGl3X2FsdCAtPiBmaXJzdF9zcGlyaXQgImJlemllaHQgSW5oYWx0IGF1cyIKCiAgICAgICAgLy8gUHJpdmF0a3VuZGVuIEF1ZnRyaXR0CiAgICAgICAgYjJjTnV0emVyIC0+IHVpcF9kZSAibnV0enQiCiAgICAgICAgdWlwX2RlIC0+IGludGVyZ2F0b3IgIm51dHp0IGbDvHIgZGllIFN1Y2hlIgogICAgICAgIHVpcF9kZSAtPiBmb25kcG9ydHJhaXRfYWx0ICJudXR6dCIKICAgICAgICB1aXBfZGUgLT4gZm9uZHNwcmVpc2xpc3RlX2FsdCAibnV0enQiCiAgICAgICAgZm9uZHNwcmVpc2xpc3RlX2FsdCAtPiBpbnRlcmdhdG9yICJiYXNpZXJ0IGF1ZiIKICAgICAgICB1aXBfZGUgLT4gbWFnbm9saWEgInplaWd0IEluaGFsdGUiCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUxhbmRzY2FwZSAiRGlhZ3JhbTEiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGV4Y2x1ZGUgZWxlbWVudC50YWc9PUFuZGVyZQogICAgICAgIH0KCgogICAgICAgIHN5c3RlbUxhbmRzY2FwZSAiV2ViYXVmdHJpdHRlIiB7CiAgICAgICAgICAgIGluY2x1ZGUgLT5lbGVtZW50LnRhZz09V2ViLUF1ZnRyaXR0LT4KICAgICAgICB9CgogICAgICAgIHN5c3RlbUNvbnRleHQgdWlwX2RlICJwcml2YXRrdW5kZW4iIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1Db250ZXh0IG1pdGFyYmVpdGVydmVyd2FsdHVuZyAibXYtc3lzdGVtLWNvbnRleHQiIHsKICAgICAgICAgICAgaW5jbHVkZSAtPm1pdGFyYmVpdGVydmVyd2FsdHVuZy0+CiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1Db250ZXh0IG51dHplcnZlcndhbHR1bmcgIm52LXN5c3RlbS1jb250ZXh0IiB7CiAgICAgICAgICAgIGluY2x1ZGUgLT5udXR6ZXJ2ZXJ3YWx0dW5nLT4gLT5taXRhcmJlaXRlcnZlcndhbHR1bmctPgogICAgICAgIH0KCiAgICAgICAgc3lzdGVtTGFuZHNjYXBlICJ6aWVsZ3J1cHBlbi1hcGktc3lzdGVtLWxhbmRzY2FwZSIgewogICAgICAgICAgICB0aXRsZSAiS29udGV4dGFiZ3Jlbnp1bmcgWmllbGdydXBwZW4gU3lzdGVtIgogICAgICAgICAgICBpbmNsdWRlIC0+emllbGdydXBwZW5TeXN0ZW0tPiBtaXRhcmJlaXRlcnZlcndhbHR1bmcgcmVkYWt0aW9uIGJhbmtNaXRhcmJlaXRlciB6aWVsZ3J1cHBlbkFkbWluIGJhbmtBZG1pbiBsYWRlem9uZSBhenVyZV9hZGJfMl9jCiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1MYW5kc2NhcGUgInppZWxncnVwcGVuLWFwaS1zeXN0ZW0tbGFuZHNjYXBlLWFrdHVlbGwiIHsKICAgICAgICAgICAgdGl0bGUgIktvbnRleHRhYmdyZW56dW5nIFppZWxncnVwcGVuIFN5c3RlbSBBa3R1ZWxsIgogICAgICAgICAgICBpbmNsdWRlIGxpZmVyYXkgbWFnbm9saWEgbWl0YXJiZWl0ZXJ2ZXJ3YWx0dW5nIGF6dXJlX2FkYl8yX2MgcmVkYWt0aW9uIGJhbmtNaXRhcmJlaXRlciB6aWVsZ3J1cHBlbkFkbWluIGJhbmtBZG1pbiBtc2R5bmFtaWNzCiAgICAgICAgfSAKCiAgICAgICAgc3lzdGVtQ29udGV4dCB6aWVsZ3J1cHBlblN5c3RlbSAiemllbGdydXBwZW4tc3lzdGVtLWNvbnRleHQiIHsKICAgICAgICAgICAgdGl0bGUgIlppZWxncnVwcGVuIFN5c3RlbSBLb250ZXh0IgogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIHN5c3RlbUNvbnRleHQgbWFnbm9saWEgInppZWxncnVwcGVuLXN5c3RlbS1jb250ZXh0LWtvbnN1bWVudGVuIiB7CiAgICAgICAgICAgIHRpdGxlICJaaWVsZ3J1cHBlbiBTeXN0ZW0gS29udGV4dCAoS29uc3VtZW50ZW4pIgogICAgICAgICAgICBpbmNsdWRlIG1hZ25vbGlhIHppZWxncnVwcGVuU3lzdGVtIHRvdGFyYSByZWRha3Rpb24gYXp1cmVfYWRiXzJfYyBiYW5rTWl0YXJiZWl0ZXIKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBtc2R5bmFtaWNzICJ6aWVsZ3J1cHBlbi1zeXN0ZW0tY29udGV4dC1tc2R5bmFtaWNzIiB7CiAgICAgICAgICAgIHRpdGxlICJaaWVsZ3J1cHBlbiBTeXN0ZW0gS29udGV4dCAoTVMgRHluYW1pY3MpIgogICAgICAgICAgICBpbmNsdWRlICogbWl0YXJiZWl0ZXJ2ZXJ3YWx0dW5nCiAgICAgICAgICAgIGV4Y2x1ZGUgcmVsYXRpb25zaGlwLnRhZz09bGVnYWN5CiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgemllbGdydXBwZW5TeXN0ZW0gInppZWxncnVwcGVuLXN5c3RlbS1jb250YWluZXIiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgbnV0emVydmVyd2FsdHVuZyAibnYtY29udGFpbmVyIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIG1pdGFyYmVpdGVydmVyd2FsdHVuZyAibXYtY29udGFpbmVyIiB7CiAgICAgICAgICAgIGluY2x1ZGUgZWxlbWVudC5wYXJlbnQ9PW51dHplcnZlcndhbHR1bmcgZWxlbWVudC5wYXJlbnQ9PW1pdGFyYmVpdGVydmVyd2FsdHVuZwogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IG52QmFja2VuZCAibnZCYWNrZW5kLWNvbXBvbmVudCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgoKICAgICAgICBkeW5hbWljICogInppZWxncnVwcGVuLWFwaS1nZXQtdGFyZ2V0LWdyb3Vwcy1mb3ItdXNlciIgIlppZWxncnVwcGVuLWJhc2llcnRlIENvbnRlbnRhdXNzcGllbHVuZyIgewogICAgICAgICAgICB0aXRsZSAiWmllbGdydXBwZW4gYmFzaWVydGUgQ29udGVudGF1c3NwaWVsdW5nIgogICAgICAgICAgICBtYWdub2xpYSAtPiB6aWVsZ3J1cHBlblN5c3RlbSAicnVmdCBaaWVsZ3J1cHBlbiBtaXQgVG9rZW4gZGVzIE51dHplcnMgYWIiCiAgICAgICAgICAgIHppZWxncnVwcGVuU3lzdGVtIC0+IG1zZHluYW1pY3MgIkxvZ2luICh0ZWNobmlzY2hlciBVc2VyKSIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gbXNkeW5hbWljcyAicnVmdCBaaWVsZ3J1cHBlbiBmw7xyIFVVS0VZIGFiICIKICAgICAgICAgICAgbXNkeW5hbWljcyAtPiB6aWVsZ3J1cHBlblN5c3RlbSAibGllZmVydCBaaWVsZ3J1cHBlbiBmw7xyIFVVS0VZIgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBtYWdub2xpYSAibGllZmVydCBaaWVsZ3J1cHBlbiBmw7xyIFVzZXIiCiAgICAgICAgfQoKCiAgICAgICAgZHluYW1pYyAqICJ6aWVsZ3J1cHBlbi1hcGktbWFnbm9saWEtY29udGVudC1hdXNzcGllbHVuZyIgIlppZWxncnVwcGVuLWJhc2llcnRlIENvbnRlbnRhdXNzcGllbHVuZyIgewogICAgICAgICAgICB0aXRsZSAiWmllbGdydXBwZW4gYmFzaWVydGUgQ29udGVudGF1c3NwaWVsdW5nIgogICAgICAgICAgICBiYW5rTWl0YXJiZWl0ZXIgLT4gaXcgInJ1ZnQgYXVmIgogICAgICAgICAgICBpdyAtPiBhenVyZV9hZGJfMl9jICJSZWRpcmVjdCBmw7xyIExvZ2luIgogICAgICAgICAgICBhenVyZV9hZGJfMl9jIC0+IHppZWxncnVwcGVuU3lzdGVtICJBYnJ1ZiBkZXIgWmllbGdydXBwZW4iCiAgICAgICAgICAgIHppZWxncnVwcGVuU3lzdGVtIC0+IG1zZHluYW1pY3MgImxvZ2luIHRlY2huaXNjaGVyIHVzZXIiCiAgICAgICAgICAgIHppZWxncnVwcGVuU3lzdGVtIC0+IG1zZHluYW1pY3MgInJ1ZnQgWmllbGdydXBwZW4gZsO8ciB1dWtleSBhYiIKICAgICAgICAgICAgbXNkeW5hbWljcyAtPiB6aWVsZ3J1cHBlblN5c3RlbSAibGllZmVydCBaaWVsZ3J1cHBlbiBmw7xyIHV1a2V5IgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBhenVyZV9hZGJfMl9jICJsaWVmZXJ0IFppZWxncnVwcGVuIGbDvHIgdXVrZXkiCiAgICAgICAgICAgIGF6dXJlX2FkYl8yX2MgLT4gaXcgImVyemV1Z3QgTG9naW50b2tlbiBpbmtsLiBaaWVsZ3J1cHBlbiIKICAgICAgICAgICAgaXcgLT4gbWFnbm9saWEgImxlaXRldCB3ZWl0ZXIiCiAgICAgICAgICAgIG1hZ25vbGlhIC0+IGJhbmtNaXRhcmJlaXRlciAiQ29udGVudCBBdXNzcGllbHVuZyBhdWYgQmFzaXMgWmllbGdydXBwZW56dWdlaMO2cmlna2VpdCIKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgKiAiemllbGdydXBwZW4tYXBpLW1hZ25vbGlhLXJlZGFrdGlvbiIgIk1hZ25vbGlhIFJlZGFrdGlvbiIgewogICAgICAgICAgICByZWRha3Rpb24gLT4gbWFnbm9saWEgInZlcndhbHRldCBJbmhhbHQiCiAgICAgICAgICAgIG1hZ25vbGlhIC0+IGVudHJhX2lkICJyZWRpcmVjdCBmw7xyIExvZ2luIgogICAgICAgICAgICBlbnRyYV9pZCAtPiBtYWdub2xpYSAiZXJ6ZXVndCBMb2dpbnRva2VuIgogICAgICAgICAgICBtYWdub2xpYSAtPiB6aWVsZ3J1cHBlblN5c3RlbSAicnVmdCBhbGxlIHZlcmbDvGdiYXJlbiBaaWVsZ3J1cHBlbiBhYiIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gbXNkeW5hbWljcyAibG9naW4gdGVjaG5pc2NoZXIgdXNlciIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gbXNkeW5hbWljcyAicnVmdCBhbGxlIHZlcmbDvGdiYXJlbiBaaWVsZ3J1cHBlbiBhYiIKICAgICAgICAgICAgbXNkeW5hbWljcyAtPiB6aWVsZ3J1cHBlblN5c3RlbSAibGllZmVydCBhbGxlIFppZWxncnVwcGVuIgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBtYWdub2xpYSAibGllZmVydCBhbGxlIFppZWxncnVwcGVuIgogICAgICAgICAgICBtYWdub2xpYSAtPiByZWRha3Rpb24gImVybcO2Z2xpY2h0IEF1c3dhaGwgZGVyIFppZWxncnVwcGVuIGbDvHIgSW5oYWx0IgogICAgICAgIH0KCgogICAgICAgIGR5bmFtaWMgKiAiemllbGdydXBwZW4tYXBpLXRvdGFyYS1hdXNzcGllbHVuZyIgIlppZWxncnVwcGVuIGJhc2llcnRlIENvbnRlbnRhdXNzcGllbHVuZyIgewogICAgICAgICAgICBiYW5rTWl0YXJiZWl0ZXIgLT4gaXcgInJ1ZnQgYXVmIgogICAgICAgICAgICBpdyAtPiBhenVyZV9hZGJfMl9jICJyZWRpcmVjdCBmw7xyIExvZ2luIgogICAgICAgICAgICBhenVyZV9hZGJfMl9jIC0+IGl3ICJlcnpldWd0IExvZ2ludG9rZW4iCiAgICAgICAgICAgIGl3IC0+IHRvdGFyYSAibGVpdGV0IHdlaXRlciIKICAgICAgICAgICAgdG90YXJhIC0+IHppZWxncnVwcGVuU3lzdGVtICJydWZ0IFppZWxncnVwcGVuIG1pdCBMb2dpbnRva2VuIGFiIgogICAgICAgICAgICB6aWVsZ3J1cHBlblN5c3RlbSAtPiBtc2R5bmFtaWNzICJydWZ0IFppZWxncnVwcGVuIGbDvHIgdXVrZXkgYWIiCiAgICAgICAgICAgIG1zZHluYW1pY3MgLT4gemllbGdydXBwZW5TeXN0ZW0gImxpZWZlcnQgWmllbGdydXBwZW4gZsO8ciB1dWtleSIKICAgICAgICAgICAgemllbGdydXBwZW5TeXN0ZW0gLT4gdG90YXJhICJsaWVmZXJ0IFppZWxncnVwcGVuIGbDvHIgdXNlciIKICAgICAgICAgICAgdG90YXJhIC0+IGJhbmtNaXRhcmJlaXRlciAiRS1MZWFybmluZ3MgQXVzc3BpZWx1bmcgYXVmIEJhc2lzIFppZWxncnVwcGVuenVnZWjDtnJpZ2tlaXQiCiAgICAgICAgfQoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50IFBlcnNvbiB7CiAgICAgICAgICAgICAgICBzaGFwZSBwZXJzb24KICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzEzMmM2NAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50IERhdGFiYXNlIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgUG9ydGFsIHsKICAgICAgICAgICAgICAgIHNoYXBlIFdlYmJyb3dzZXIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBSb3VuZGVkQm94CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgQ29udGFpbmVyIHsKICAgICAgICAgICAgICAgIHNoYXBlIFJvdW5kZWRCb3gKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCBDb21wb25lbnQgewogICAgICAgICAgICAgICAgc2hhcGUgUm91bmRlZEJveAogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJTRCBVc2VyIiB7CiAgICAgICAgICAgICAgICBpY29uICIuL2ljb25zL1NEVF9Vc2VyLnBuZyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU0RUIENvZGUgZCdBenVyZSIgewogICAgICAgICAgICAgICAgaWNvbiAiLi9pY29ucy9TRFRfQ29kZURBenVyZS5wbmciCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlNEVCBBc3NldCBGb3JjZSIgewogICAgICAgICAgICAgICAgaWNvbiAiLi9pY29ucy9TRFRfQXNzZXRGb3JjZS5wbmciCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlNEVCAzNDIiIHsKICAgICAgICAgICAgICAgIGljb24gIi4vaWNvbnMvU0RUXzM0Mi5wbmciCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlNEVCBQb3J0YXN0cnVrdHVyIiB7CiAgICAgICAgICAgICAgICBpY29uICIuL2ljb25zL1NEVF9Qb3J0YXN0cnVrdHVyLnBuZyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU0RUIFNEUyIgewogICAgICAgICAgICAgICAgaWNvbiAiLi9pY29ucy9TRFRfU0RTLnBuZyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiU0RUIFF1YWxpIiB7CiAgICAgICAgICAgICAgICBpY29uICIuL2ljb25zL1NEVF9RdWFsaWZpemllcnVuZy5wbmciCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIGJyYW5kaW5nIHsKICAgICAgICAgICAgbG9nbyAiLi9pY29ucy91aS5wbmciCiAgICAgICAgfQogICAgfQogICAgCgp9Cg=="
   },
   "views" : {
+    "componentViews" : [ {
+      "containerId" : "71",
+      "dimensions" : {
+        "height" : 2197,
+        "width" : 1650
+      },
+      "elements" : [ {
+        "id" : "60",
+        "x" : 228,
+        "y" : 200
+      }, {
+        "id" : "70",
+        "x" : 978,
+        "y" : 200
+      }, {
+        "id" : "72",
+        "x" : 979,
+        "y" : 1197
+      }, {
+        "id" : "75",
+        "x" : 219,
+        "y" : 1217
+      }, {
+        "id" : "76",
+        "x" : 579,
+        "y" : 707
+      }, {
+        "id" : "79",
+        "x" : 560,
+        "y" : 1780
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "key" : "nvBackend-component",
+      "order" : 14,
+      "relationships" : [ {
+        "id" : "73"
+      }, {
+        "id" : "77"
+      }, {
+        "id" : "78"
+      }, {
+        "id" : "80"
+      }, {
+        "id" : "82"
+      }, {
+        "id" : "84"
+      } ]
+    } ],
     "configuration" : {
       "branding" : {
         "logo" : "data:image/png;base64,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"
       },
-      "lastSavedView" : "Webauftritte",
-      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "zielgruppen-api-magnolia-content-ausspielung",
       "styles" : {
         "elements" : [ {
           "background" : "#132c64",
@@ -1229,17 +1355,61 @@
     },
     "containerViews" : [ {
       "dimensions" : {
+        "height" : 1469,
+        "width" : 2410
+      },
+      "elements" : [ {
+        "id" : "4",
+        "x" : 90,
+        "y" : 810
+      }, {
+        "id" : "43",
+        "x" : 710,
+        "y" : 878
+      }, {
+        "id" : "51",
+        "x" : 1759,
+        "y" : 875
+      }, {
+        "id" : "52",
+        "x" : 710,
+        "y" : 245
+      }, {
+        "id" : "60",
+        "x" : 1754,
+        "y" : 260
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "key" : "zielgruppen-system-context-msdynamics",
+      "order" : 10,
+      "relationships" : [ {
+        "id" : "110"
+      }, {
+        "id" : "111"
+      }, {
+        "id" : "115",
+        "vertices" : [ {
+          "x" : 635,
+          "y" : 1015
+        } ]
+      }, {
+        "id" : "56"
+      } ],
+      "softwareSystemId" : "42",
+      "title" : "Zielgruppen System Kontext (MS Dynamics)"
+    }, {
+      "dimensions" : {
         "height" : 1916,
         "width" : 1754
       },
       "elements" : [ {
         "id" : "14",
-        "x" : 329,
-        "y" : 208
+        "x" : 85,
+        "y" : 200
       }, {
         "id" : "36",
-        "x" : 1079,
-        "y" : 208
+        "x" : 765,
+        "y" : 205
       }, {
         "id" : "42",
         "x" : 329,
@@ -1248,19 +1418,29 @@
         "id" : "53",
         "x" : 329,
         "y" : 808
+      }, {
+        "id" : "58",
+        "x" : 1120,
+        "y" : 795
       } ],
       "externalSoftwareSystemBoundariesVisible" : false,
       "key" : "zielgruppen-system-container",
-      "order" : 10,
+      "order" : 11,
       "paperSize" : "A4_Portrait",
       "relationships" : [ {
-        "id" : "101",
+        "id" : "105",
         "vertices" : [ {
-          "x" : 704,
-          "y" : 658
+          "x" : 340,
+          "y" : 645
         } ]
       }, {
-        "id" : "104"
+        "id" : "108",
+        "vertices" : [ {
+          "x" : 875,
+          "y" : 645
+        } ]
+      }, {
+        "id" : "116"
       }, {
         "id" : "55"
       } ],
@@ -1283,20 +1463,18 @@
         "x" : 958,
         "y" : 929
       }, {
-        "id" : "74",
+        "id" : "79",
         "x" : 958,
         "y" : 1529
       } ],
       "externalSoftwareSystemBoundariesVisible" : false,
       "key" : "nv-container",
-      "order" : 11,
+      "order" : 12,
       "paperSize" : "A5_Portrait",
       "relationships" : [ {
-        "id" : "73"
+        "id" : "74"
       }, {
-        "id" : "75"
-      }, {
-        "id" : "79"
+        "id" : "81"
       }, {
         "id" : "86"
       } ],
@@ -1331,52 +1509,40 @@
         "x" : 2051,
         "y" : 1054
       }, {
-        "id" : "74",
+        "id" : "79",
         "x" : 2062,
         "y" : 1525
       } ],
       "externalSoftwareSystemBoundariesVisible" : false,
       "key" : "mv-container",
-      "order" : 12,
+      "order" : 13,
       "relationships" : [ {
         "id" : "65"
       }, {
         "id" : "67"
       }, {
-        "id" : "73"
+        "id" : "74"
       }, {
-        "id" : "75"
+        "id" : "81"
       }, {
-        "id" : "76",
+        "id" : "85"
+      }, {
+        "id" : "89",
         "vertices" : [ {
           "x" : 925,
           "y" : 1001
         } ]
       }, {
-        "id" : "77",
-        "vertices" : [ {
-          "x" : 1511,
-          "y" : 854
-        } ]
-      }, {
-        "id" : "81",
-        "vertices" : [ {
-          "x" : 1496,
-          "y" : 1234
-        } ]
-      }, {
-        "id" : "82",
+        "id" : "90",
         "vertices" : [ {
           "x" : 1212,
           "y" : 1091
         } ]
-      }, {
-        "id" : "84"
       } ],
       "softwareSystemId" : "60"
     } ],
     "dynamicViews" : [ {
-      "description" : "Zielgruppen basierte Contentausspielung",
+      "description" : "Zielgruppen-basierte Contentausspielung",
       "dimensions" : {
         "height" : 2144,
         "width" : 905
@@ -1396,10 +1562,10 @@
       } ],
       "externalBoundariesVisible" : false,
       "key" : "zielgruppen-api-get-target-groups-for-user",
-      "order" : 13,
+      "order" : 15,
       "relationships" : [ {
         "description" : "ruft Zielgruppen mit Token des Nutzers ab",
-        "id" : "102",
+        "id" : "106",
         "order" : "1",
         "response" : false,
         "vertices" : [ {
@@ -1435,7 +1601,7 @@
         } ]
       }, {
         "description" : "liefert Zielgruppen für User",
-        "id" : "102",
+        "id" : "106",
         "order" : "5",
         "response" : true,
         "vertices" : [ {
@@ -1445,7 +1611,7 @@
       } ],
       "title" : "Zielgruppen basierte Contentausspielung"
     }, {
-      "description" : "Zielgruppen basierte Contentausspielung",
+      "description" : "Zielgruppen-basierte Contentausspielung",
       "dimensions" : {
         "height" : 2734,
         "width" : 1750
@@ -1477,15 +1643,15 @@
       } ],
       "externalBoundariesVisible" : false,
       "key" : "zielgruppen-api-magnolia-content-ausspielung",
-      "order" : 14,
+      "order" : 16,
       "relationships" : [ {
         "description" : "ruft auf",
-        "id" : "87",
+        "id" : "91",
         "order" : "1",
         "response" : false
       }, {
-        "description" : "redirect für Login",
-        "id" : "97",
+        "description" : "Redirect für Login",
+        "id" : "101",
         "order" : "2",
         "response" : false,
         "vertices" : [ {
@@ -1493,63 +1659,67 @@
           "y" : 1214
         } ]
       }, {
-        "description" : "erzeugt Logintoken",
-        "id" : "97",
+        "description" : "Abruf der Zielgruppen",
+        "id" : "117",
         "order" : "3",
-        "response" : true,
-        "vertices" : [ {
-          "x" : 604,
-          "y" : 1264
-        } ]
-      }, {
-        "description" : "leitet weiter",
-        "id" : "93",
-        "order" : "4",
-        "response" : false
-      }, {
-        "description" : "ruft Zielgruppen mit Logintoken ab",
-        "id" : "102",
-        "order" : "5",
         "response" : false,
         "vertices" : [ {
-          "x" : 1119,
-          "y" : 1279
+          "x" : 874,
+          "y" : 1804
         } ]
       }, {
         "description" : "login technischer user",
         "id" : "57",
-        "order" : "6",
+        "order" : "4",
         "response" : false,
         "vertices" : [ {
-          "x" : 1134,
-          "y" : 1914
+          "x" : 1304,
+          "y" : 1981
         } ]
       }, {
         "description" : "ruft Zielgruppen für uukey ab",
         "id" : "57",
-        "order" : "7",
+        "order" : "5",
         "response" : false,
         "vertices" : [ {
-          "x" : 1459,
-          "y" : 1929
+          "x" : 1454,
+          "y" : 1981
         } ]
       }, {
         "description" : "liefert Zielgruppen für uukey",
         "id" : "57",
-        "order" : "8",
-        "response" : true
-      }, {
-        "description" : "liefert Zielgruppen für user",
-        "id" : "102",
-        "order" : "9",
+        "order" : "6",
         "response" : true,
         "vertices" : [ {
-          "x" : 1464,
-          "y" : 1399
+          "x" : 1154,
+          "y" : 1981
         } ]
       }, {
+        "description" : "liefert Zielgruppen für uukey",
+        "id" : "117",
+        "order" : "7",
+        "response" : true,
+        "vertices" : [ {
+          "x" : 874,
+          "y" : 1504
+        } ]
+      }, {
+        "description" : "erzeugt Logintoken inkl. Zielgruppen",
+        "id" : "101",
+        "order" : "8",
+        "response" : true,
+        "vertices" : [ {
+          "x" : 595,
+          "y" : 1220
+        } ]
+      }, {
+        "description" : "leitet weiter",
+        "id" : "97",
+        "order" : "9",
+        "response" : false
+      }, {
         "description" : "Content Ausspielung auf Basis Zielgruppenzugehörigkeit",
-        "id" : "91",
+        "id" : "95",
         "order" : "10",
         "response" : true
       } ],
@@ -1583,10 +1753,10 @@
       } ],
       "externalBoundariesVisible" : false,
       "key" : "zielgruppen-api-magnolia-redaktion",
-      "order" : 15,
+      "order" : 17,
       "relationships" : [ {
         "description" : "verwaltet Inhalt",
-        "id" : "89",
+        "id" : "93",
         "order" : "1",
         "response" : false,
         "vertices" : [ {
@@ -1595,7 +1765,7 @@
         } ]
       }, {
         "description" : "redirect für Login",
-        "id" : "103",
+        "id" : "107",
         "order" : "2",
         "response" : false,
         "vertices" : [ {
@@ -1604,7 +1774,7 @@
         } ]
       }, {
         "description" : "erzeugt Logintoken",
-        "id" : "103",
+        "id" : "107",
         "order" : "3",
         "response" : true,
         "vertices" : [ {
@@ -1613,7 +1783,7 @@
         } ]
       }, {
         "description" : "ruft alle verfügbaren Zielgruppen ab",
-        "id" : "102",
+        "id" : "106",
         "order" : "4",
         "response" : false,
         "vertices" : [ {
@@ -1645,7 +1815,7 @@
         "response" : true
       }, {
         "description" : "liefert alle Zielgruppen",
-        "id" : "102",
+        "id" : "106",
         "order" : "8",
         "response" : true,
         "vertices" : [ {
@@ -1654,7 +1824,7 @@
         } ]
       }, {
         "description" : "ermöglicht Auswahl der Zielgruppen für Inhalt",
-        "id" : "89",
+        "id" : "93",
         "order" : "9",
         "response" : true,
         "vertices" : [ {
@@ -1695,15 +1865,15 @@
       } ],
       "externalBoundariesVisible" : false,
       "key" : "zielgruppen-api-totara-ausspielung",
-      "order" : 16,
+      "order" : 18,
       "relationships" : [ {
         "description" : "ruft auf",
-        "id" : "87",
+        "id" : "91",
         "order" : "1",
         "response" : false
       }, {
         "description" : "redirect für Login",
-        "id" : "97",
+        "id" : "101",
         "order" : "2",
         "response" : false,
         "vertices" : [ {
@@ -1712,7 +1882,7 @@
         } ]
       }, {
         "description" : "erzeugt Logintoken",
-        "id" : "97",
+        "id" : "101",
         "order" : "3",
         "response" : true,
         "vertices" : [ {
@@ -1721,12 +1891,12 @@
         } ]
       }, {
         "description" : "leitet weiter",
-        "id" : "95",
+        "id" : "99",
         "order" : "4",
         "response" : false
       }, {
         "description" : "ruft Zielgruppen mit Logintoken ab",
-        "id" : "105",
+        "id" : "109",
         "order" : "5",
         "response" : false,
         "vertices" : [ {
@@ -1753,7 +1923,7 @@
         } ]
       }, {
         "description" : "liefert Zielgruppen für user",
-        "id" : "105",
+        "id" : "109",
         "order" : "8",
         "response" : true,
         "vertices" : [ {
@@ -1762,7 +1932,7 @@
         } ]
       }, {
         "description" : "E-Learnings Ausspielung auf Basis Zielgruppenzugehörigkeit",
-        "id" : "92",
+        "id" : "96",
         "order" : "9",
         "response" : true
       } ]
@@ -1802,25 +1972,25 @@
       "order" : 3,
       "paperSize" : "A3_Landscape",
       "relationships" : [ {
-        "id" : "116"
+        "id" : "125"
       }, {
-        "id" : "117",
+        "id" : "126",
         "vertices" : [ {
           "x" : 1708,
           "y" : 1404
         } ]
       }, {
-        "id" : "118",
+        "id" : "127",
         "vertices" : [ {
           "x" : 929,
           "y" : 1404
         } ]
       }, {
-        "id" : "119"
+        "id" : "128"
       }, {
-        "id" : "120"
+        "id" : "129"
       }, {
-        "id" : "121",
+        "id" : "130",
         "vertices" : [ {
           "x" : 1979,
           "y" : 1404
@@ -1858,13 +2028,13 @@
       "order" : 4,
       "paperSize" : "A6_Portrait",
       "relationships" : [ {
-        "id" : "106"
+        "id" : "110"
       }, {
-        "id" : "111"
+        "id" : "119"
       }, {
         "id" : "63"
       }, {
-        "id" : "80"
+        "id" : "88"
       } ],
       "softwareSystemId" : "60"
     }, {
@@ -1898,9 +2068,9 @@
       "order" : 5,
       "paperSize" : "A4_Landscape",
       "relationships" : [ {
-        "id" : "106"
+        "id" : "110"
       }, {
-        "id" : "111",
+        "id" : "119",
         "vertices" : [ {
           "x" : 1708,
           "y" : 1404
@@ -1908,39 +2078,44 @@
       }, {
         "id" : "63"
       }, {
-        "id" : "80"
+        "id" : "88"
       } ],
       "softwareSystemId" : "69"
     }, {
       "dimensions" : {
-        "height" : 2158,
-        "width" : 1858
+        "height" : 1994,
+        "width" : 2061
       },
       "elements" : [ {
         "id" : "14",
-        "x" : 329,
-        "y" : 329
+        "x" : 219,
+        "y" : 220
       }, {
         "id" : "36",
-        "x" : 1079,
-        "y" : 329
+        "x" : 969,
+        "y" : 220
       }, {
         "id" : "42",
-        "x" : 704,
-        "y" : 1529
+        "x" : 594,
+        "y" : 1420
       }, {
         "id" : "52",
-        "x" : 704,
-        "y" : 929
+        "x" : 594,
+        "y" : 820
+      }, {
+        "id" : "58",
+        "x" : 1390,
+        "y" : 816
       } ],
       "enterpriseBoundaryVisible" : true,
       "key" : "zielgruppen-system-context",
-      "order" : 7,
-      "paperSize" : "A4_Portrait",
+      "order" : 8,
       "relationships" : [ {
-        "id" : "102"
+        "id" : "106"
       }, {
-        "id" : "105"
+        "id" : "109"
+      }, {
+        "id" : "117"
       }, {
         "id" : "57"
       } ],
@@ -1948,90 +2123,60 @@
       "title" : "Zielgruppen System Kontext"
     }, {
       "dimensions" : {
-        "height" : 2120,
-        "width" : 1858
+        "height" : 2074,
+        "width" : 1981
       },
       "elements" : [ {
         "id" : "1",
-        "x" : 1079,
-        "y" : 208
+        "x" : 969,
+        "y" : 199
       }, {
         "id" : "2",
-        "x" : 354,
-        "y" : 208
+        "x" : 244,
+        "y" : 199
       }, {
         "id" : "14",
-        "x" : 329,
-        "y" : 908
+        "x" : 219,
+        "y" : 899
       }, {
         "id" : "36",
-        "x" : 1079,
-        "y" : 908
+        "x" : 969,
+        "y" : 899
       }, {
         "id" : "52",
-        "x" : 704,
-        "y" : 1508
+        "x" : 594,
+        "y" : 1499
+      }, {
+        "id" : "58",
+        "x" : 1310,
+        "y" : 1491
       } ],
       "enterpriseBoundaryVisible" : true,
       "key" : "zielgruppen-system-context-konsumenten",
-      "order" : 8,
-      "paperSize" : "A4_Portrait",
-      "relationships" : [ {
-        "id" : "102"
-      }, {
-        "id" : "105"
-      }, {
-        "id" : "89"
-      }, {
-        "id" : "90"
-      }, {
-        "id" : "91"
-      }, {
-        "id" : "92"
-      } ],
-      "softwareSystemId" : "14",
-      "title" : "Zielgruppen System Kontext (Konsumenten)"
-    }, {
-      "dimensions" : {
-        "height" : 1608,
-        "width" : 2454
-      },
-      "elements" : [ {
-        "id" : "4",
-        "x" : 35,
-        "y" : 700
-      }, {
-        "id" : "42",
-        "x" : 820,
-        "y" : 750
-      }, {
-        "id" : "51",
-        "x" : 1790,
-        "y" : 745
-      }, {
-        "id" : "52",
-        "x" : 825,
-        "y" : 90
-      }, {
-        "id" : "60",
-        "x" : 1775,
-        "y" : 95
-      } ],
-      "enterpriseBoundaryVisible" : true,
-      "key" : "zielgruppen-system-context-msdynamics",
       "order" : 9,
-      "paperSize" : "A5_Landscape",
       "relationships" : [ {
         "id" : "106"
       }, {
-        "id" : "108"
+        "id" : "109"
       }, {
-        "id" : "110"
+        "id" : "117"
       }, {
-        "id" : "57"
+        "id" : "118",
+        "vertices" : [ {
+          "x" : 1529,
+          "y" : 859
+        } ]
+      }, {
+        "id" : "93"
+      }, {
+        "id" : "94"
+      }, {
+        "id" : "95"
+      }, {
+        "id" : "96"
       } ],
-      "softwareSystemId" : "42",
-      "title" : "Zielgruppen System Kontext (MS Dynamics)"
+      "softwareSystemId" : "14",
+      "title" : "Zielgruppen System Kontext (Konsumenten)"
     } ],
     "systemLandscapeViews" : [ {
       "dimensions" : {
@@ -2228,13 +2373,28 @@
       "order" : 1,
       "paperSize" : "A0_Landscape",
       "relationships" : [ {
-        "id" : "100",
+        "id" : "100"
+      }, {
+        "id" : "101"
+      }, {
+        "id" : "102",
+        "vertices" : [ {
+          "x" : 12870,
+          "y" : 2033
+        }, {
+          "x" : 929,
+          "y" : 2175
+        } ]
+      }, {
+        "id" : "103"
+      }, {
+        "id" : "104",
         "vertices" : [ {
           "x" : 929,
           "y" : 2175
         } ]
       }, {
-        "id" : "102",
+        "id" : "106",
         "vertices" : [ {
           "x" : 12870,
           "y" : 2033
@@ -2243,7 +2403,7 @@
           "y" : 2175
         } ]
       }, {
-        "id" : "103",
+        "id" : "107",
         "vertices" : [ {
           "x" : 12870,
           "y" : 2033
@@ -2252,9 +2412,13 @@
           "y" : 2175
         } ]
       }, {
-        "id" : "105"
+        "id" : "109"
       }, {
-        "id" : "111",
+        "id" : "117"
+      }, {
+        "id" : "118"
+      }, {
+        "id" : "119",
         "vertices" : [ {
           "x" : 6179,
           "y" : 2175
@@ -2269,7 +2433,7 @@
           "y" : 2175
         } ]
       }, {
-        "id" : "112",
+        "id" : "120",
         "vertices" : [ {
           "x" : 5429,
           "y" : 2175
@@ -2284,37 +2448,35 @@
           "y" : 2175
         } ]
       }, {
-        "id" : "113",
-        "vertices" : [ {
-          "x" : 12870,
-          "y" : 2033
-        } ]
-      }, {
-        "id" : "114"
-      }, {
-        "id" : "115"
-      }, {
-        "id" : "116"
-      }, {
-        "id" : "117"
-      }, {
-        "id" : "118"
-      }, {
-        "id" : "119"
-      }, {
-        "id" : "120"
-      }, {
         "id" : "121"
+      }, {
+        "id" : "122"
+      }, {
+        "id" : "123"
+      }, {
+        "id" : "124"
+      }, {
+        "id" : "125"
+      }, {
+        "id" : "126"
+      }, {
+        "id" : "127"
+      }, {
+        "id" : "128"
+      }, {
+        "id" : "129"
+      }, {
+        "id" : "130"
       }, {
         "id" : "63"
       }, {
-        "id" : "80"
-      }, {
-        "id" : "87"
-      }, {
         "id" : "88"
       }, {
-        "id" : "89",
+        "id" : "91"
+      }, {
+        "id" : "92"
+      }, {
+        "id" : "93",
         "vertices" : [ {
           "x" : 5800,
           "y" : 733
@@ -2326,13 +2488,13 @@
           "y" : 1525
         } ]
       }, {
-        "id" : "90",
+        "id" : "94",
         "vertices" : [ {
           "x" : 4683,
           "y" : 979
         } ]
       }, {
-        "id" : "91",
+        "id" : "95",
         "vertices" : [ {
           "x" : 6500,
           "y" : 733
@@ -2344,7 +2506,7 @@
           "y" : 1525
         } ]
       }, {
-        "id" : "92",
+        "id" : "96",
         "vertices" : [ {
           "x" : 5800,
           "y" : 733
@@ -2353,13 +2515,13 @@
           "y" : 979
         } ]
       }, {
-        "id" : "93",
+        "id" : "97",
         "vertices" : [ {
           "x" : 12870,
           "y" : 1525
         } ]
       }, {
-        "id" : "94",
+        "id" : "98",
         "vertices" : [ {
           "x" : 5154,
           "y" : 1525
@@ -2371,26 +2533,11 @@
           "y" : 2175
         } ]
       }, {
-        "id" : "95",
+        "id" : "99",
         "vertices" : [ {
           "x" : 4754,
           "y" : 1525
         } ]
-      }, {
-        "id" : "96"
-      }, {
-        "id" : "97"
-      }, {
-        "id" : "98",
-        "vertices" : [ {
-          "x" : 12870,
-          "y" : 2033
-        }, {
-          "x" : 929,
-          "y" : 2175
-        } ]
-      }, {
-        "id" : "99"
       } ]
     }, {
       "dimensions" : {
@@ -2443,25 +2590,25 @@
       "order" : 2,
       "paperSize" : "A2_Landscape",
       "relationships" : [ {
-        "id" : "116"
+        "id" : "125"
       }, {
-        "id" : "117",
+        "id" : "126",
         "vertices" : [ {
           "x" : 1708,
           "y" : 1404
         } ]
       }, {
-        "id" : "118",
+        "id" : "127",
         "vertices" : [ {
           "x" : 929,
           "y" : 1404
         } ]
       }, {
-        "id" : "119"
+        "id" : "128"
       }, {
-        "id" : "120"
+        "id" : "129"
       }, {
-        "id" : "121",
+        "id" : "130",
         "vertices" : [ {
           "x" : 1979,
           "y" : 1404
@@ -2469,93 +2616,177 @@
       } ]
     }, {
       "dimensions" : {
-        "height" : 2504,
-        "width" : 2764
+        "height" : 2579,
+        "width" : 2951
       },
       "elements" : [ {
         "id" : "1",
-        "x" : 1410,
-        "y" : 135
+        "x" : 1247,
+        "y" : 215
       }, {
         "id" : "2",
-        "x" : 705,
-        "y" : 165
+        "x" : 200,
+        "y" : 215
       }, {
         "id" : "4",
         "x" : 199,
-        "y" : 1875
+        "y" : 1955
       }, {
         "id" : "5",
-        "x" : 2114,
-        "y" : 165
+        "x" : 2295,
+        "y" : 215
       }, {
         "id" : "14",
-        "x" : 670,
-        "y" : 815
+        "x" : 350,
+        "y" : 855
       }, {
         "id" : "36",
-        "x" : 1590,
-        "y" : 800
+        "x" : 1230,
+        "y" : 885
       }, {
         "id" : "42",
         "x" : 877,
-        "y" : 1925
+        "y" : 2005
       }, {
         "id" : "51",
-        "x" : 2088,
-        "y" : 1930
+        "x" : 2275,
+        "y" : 2005
       }, {
         "id" : "52",
         "x" : 878,
-        "y" : 1375
+        "y" : 1455
+      }, {
+        "id" : "58",
+        "x" : 1579,
+        "y" : 1455
       }, {
         "id" : "60",
-        "x" : 2093,
-        "y" : 1370
+        "x" : 2280,
+        "y" : 1455
       } ],
       "enterpriseBoundaryVisible" : true,
       "key" : "zielgruppen-api-system-landscape",
       "order" : 6,
       "relationships" : [ {
-        "id" : "102",
-        "vertices" : [ {
-          "x" : 1030,
-          "y" : 1290
-        } ]
-      }, {
-        "id" : "105"
-      }, {
         "id" : "106"
       }, {
-        "id" : "108"
+        "id" : "109"
       }, {
         "id" : "110"
+      }, {
+        "id" : "112"
+      }, {
+        "id" : "114"
+      }, {
+        "id" : "117"
+      }, {
+        "id" : "118",
+        "vertices" : [ {
+          "x" : 1805,
+          "y" : 770
+        } ]
       }, {
         "id" : "57"
       }, {
         "id" : "63"
       }, {
-        "id" : "89",
+        "id" : "93"
+      }, {
+        "id" : "94",
         "vertices" : [ {
-          "x" : 805,
-          "y" : 665
+          "x" : 870,
+          "y" : 785
+        }, {
+          "x" : 1030,
+          "y" : 910
         } ]
       }, {
-        "id" : "90",
+        "id" : "95",
         "vertices" : [ {
-          "x" : 1445,
-          "y" : 955
+          "x" : 1005,
+          "y" : 485
         } ]
       }, {
-        "id" : "91",
-        "vertices" : [ {
-          "x" : 1470,
-          "y" : 600
-        } ]
-      }, {
-        "id" : "92"
+        "id" : "96"
       } ],
       "title" : "Kontextabgrenzung Zielgruppen System"
+    }, {
+      "dimensions" : {
+        "height" : 2634,
+        "width" : 3007
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 1628,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 895,
+        "y" : 210
+      }, {
+        "id" : "4",
+        "x" : 200,
+        "y" : 1595
+      }, {
+        "id" : "5",
+        "x" : 2362,
+        "y" : 240
+      }, {
+        "id" : "14",
+        "x" : 887,
+        "y" : 990
+      }, {
+        "id" : "16",
+        "x" : 887,
+        "y" : 1640
+      }, {
+        "id" : "42",
+        "x" : 885,
+        "y" : 2120
+      }, {
+        "id" : "58",
+        "x" : 1795,
+        "y" : 995
+      }, {
+        "id" : "60",
+        "x" : 2337,
+        "y" : 990
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "zielgruppen-api-system-landscape-aktuell",
+      "order" : 7,
+      "relationships" : [ {
+        "id" : "114",
+        "vertices" : [ {
+          "x" : 735,
+          "y" : 2020
+        } ]
+      }, {
+        "id" : "118"
+      }, {
+        "id" : "119",
+        "vertices" : [ {
+          "x" : 2555,
+          "y" : 1790
+        } ]
+      }, {
+        "id" : "120"
+      }, {
+        "id" : "121",
+        "vertices" : [ {
+          "x" : 1110,
+          "y" : 1465
+        } ]
+      }, {
+        "id" : "122"
+      }, {
+        "id" : "63"
+      }, {
+        "id" : "93"
+      }, {
+        "id" : "95"
+      } ],
+      "title" : "Kontextabgrenzung Zielgruppen System Aktuell"
     } ]
   }
 }

@@ -16,7 +16,7 @@ Die Lösung umfasst zwei Kernpunkte:
 
 ### Qualitätsziele
 
-1. Die Zielgruppen Definition soll komfortabler funktionieren als in der bisherigen Liferay basierten Lösung. Idealerweise durchführbar durch Redaktionsmitglieder selber, anstatt durch Expert*Innen.
+1. Die Zielgruppen Definition soll komfortabler funktionieren als in der bisherigen Liferay-basierten Lösung. Idealerweise durchführbar durch Redaktionsmitglieder selber, anstatt durch Expert*Innen.
 1. Zielgruppen Zugehörigkeit ist bei Änderungen innerhalb von 1h aktualisiert
 
 ## Randbedingungen
@@ -33,7 +33,10 @@ Liferay wird Ende 2025 abgeschaltet. Bis dahin muss mindestens eine Übergangsl�
 
 ### Fachlicher Kontext
 
-![](embed:zielgruppen-api-system-landscape)
+Das folgende Bild zeigt die aktuelle Liferay-basierte Lösung:
+
+![](embed:zielgruppen-api-system-landscape-aktuell)
+
 
 ### Technischer- oder Verteilungskontext
 
@@ -56,6 +59,10 @@ Die Zielgruppen Lösung soll dann auch darauf umgebaut werden.
 Um die Liferay Ablösung durch die Einführung von Customer Insights Data nicht zu gefährden wurde entschieden zunächst eine Übergangslösung auf Basis von dem bereits in betrieb-befindlichen Customer Insights Journeys zu entwickeln.
 Die damit einhergehenden Restriktionen (Segment Limit und fehlende Schnittstellen) werden durch Eigenentwicklung ergänzt.
 Nach der Einführung der Ziellösung wird die Übergangslösung zurückgebaut.
+
+Die folgende Darstellung zeigt das Personen und System Zusammenspiel in der Übergangslösung.
+
+![](embed:zielgruppen-api-system-landscape)
 
 #### Definition Zielgruppen 
 
